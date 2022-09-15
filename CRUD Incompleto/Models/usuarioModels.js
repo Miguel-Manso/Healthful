@@ -2,16 +2,62 @@ import { CriacaoPoolSql } from "../pool.js";
 const Conexao = await CriacaoPoolSql();
 
 export class Usuario{
-    constructor(nome_User, email_User, senha_User, dt_nasc, nivel_User, status_User, data_insert, data_update, id_User){
-        this._nome_User = nome_User,
-        this._email_User = email_User,
-        this._senha_User = senha_User,
-        this._dt_nasc = dt_nasc,
-        this._nivel_User = nivel_User,
-        this._status_User = status_User,
-        this._data_insert = data_insert,
-        this._data_update = data_update, 
-        this._id_User = id_User
+    constructor(idUser, nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate){
+        if(idUser == '' || idUser == null || idUser == undefined){
+            this._idUser = ''
+        }else{
+            this._idUser = idUser
+        }
+        
+        if(nomeUser == '' || nomeUser == null || nomeUser == undefined){
+            this._nomeUser = ''
+        }else{
+            this._nomeUser = nomeUser
+        }
+
+        if(emailUser == '' || emailUser == null || emailUser == undefined){
+            this._emailUser = ''
+        }else{
+            this._emailUser = emailUser
+        }
+
+        if(senhaUser == '' || senhaUser == null || senhaUser == undefined){
+            this._senhaUser = ''
+        }else{
+            this._senhaUser = senhaUser
+        }
+
+        if(dtNasc == '' || dtNasc == null || dtNasc == undefined){
+            this._dtNasc = ''
+        }else{
+            this._dtNasc = dtNasc
+        }
+
+        if(nivelUser == '' || nivelUser == null || nivelUser == undefined){
+            this._nivelUser = 1
+        }else{
+            this._nivelUser = 1
+        }
+
+        if(statusUser == '' || statusUser == null || statusUser == undefined){
+            this._statusUser = 1
+        }else{
+            this._statusUser = 1
+        }
+
+        if(dataInsert == '' || dataInsert == null || dataInsert == undefined){
+            this._dataInsert = ''
+        }else{
+            this._dataInsert = dataInsert
+        }
+        
+        if(dataUpdate == '' || dataUpdate == null || dataUpdate == undefined){
+            this._dataUpdate = ''
+        }else{
+            this._dataUpdate = dataUpdate
+        }
+
+    
     }
 
     static async SelectAll(){
@@ -20,7 +66,7 @@ export class Usuario{
             return recordset
         }
         catch(err){
-            console.log('erro no script usuarioModel.js | Select All' + err)
+            console.log('erro no script usuarioModel.js | Select All|' + err)
             return false
 
         }
@@ -28,35 +74,35 @@ export class Usuario{
 
     async Insert(){
         try{
-            const { rowsAffected } = await Conexao.query(`insert into usuario values('${this._nome_User}', '${this._email_User}', '${this._senha_User}', '${this._dt_nasc}', ${this._nivel_User}, ${this._status_User}, '${this._data_insert}', '${this._data_update}')`)
+            const { rowsAffected } = await Conexao.query(`insert into usuario values('${this._nomeUser}', '${this._emailUser}', '${this._senhaUser}', '${this._dtNasc}', ${this._nivelUser}, ${this._statusUser}, '${this._dataInsert}', '${this._dataUpdate}')`)
             return rowsAffected
 
         }
         catch(err){
-            console.log('erro no script usuarioModel.js | Insert ' + err)
+            console.log('erro no script usuarioModel.js | Insert |' + err)
             return false
         }
     }
 
     async Update(){
         try{
-            const { rowsAffected } = await Conexao.query(`update usuario set nome_User = '${this._nome_User}', email_User = '${this._email_User}', senha_User = '${this._senha_User}', dt_nasc = '${this._dt_nasc}', nivel_User = ${this._nivel_User}, status_User = ${this._status_User}, data_insert = '${this._data_insert}', data_update = '${this._data_update}' where id_User = ${this._id_User}`)
+            const { rowsAffected } = await Conexao.query(`update usuario set nomeUser = '${this._nomeUser}', emailUser = '${this._emailUser}', senhaUser = '${this._senhaUser}', dtNasc = '${this._dtNasc}', nivelUser = ${this._nivelUser}, statusUser = ${this._statusUser}, dataInsert = '${this._dataInsert}', dataUpdate = '${this._dataUpdate}' where idUser = ${this._idUser}`)
             return rowsAffected
 
         }
         catch(err){
-            console.log('erro no script usuarioModel.js | Update ' + err)
+            console.log('erro no script usuarioModel.js | Update |' + err)
             return false
         }
     }
 
     async Delete(){
         try {
-            const { rowsAffected } = await Conexao.query(`delete from usuario where id_User = ${this._id_User}`)
+            const { rowsAffected } = await Conexao.query(`delete from usuario where idUser = ${this._idUser}`)
             return rowsAffected
         } 
         catch(err){
-            console.log('error no usuarioModel.js | Delete ' + err)
+            console.log('error no usuarioModel.js | Delete |' + err)
             return (err)
         }
     }
