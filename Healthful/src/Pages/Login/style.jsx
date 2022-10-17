@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from '../../Assets/fundo-login.jpg'
+import img from '../../Assets/fundo_login.jpg'
 
 
 const ContainerLogin = styled.div`
@@ -22,8 +22,8 @@ const LoginBox = styled.div`
     flex-direction: column;
     height: 80vh;
     width: 30vw;
-    background-color: rgba(255,255,255, 0.15);
-    box-shadow: 0 8px 32px 0 #1b64115e;
+    background-color: rgba(255,255,255, 0.50);
+    box-shadow: 0 8px 32px 0 rgba(20,188,4,0.15);
     backdrop-filter: blur(8.5px);
     border-radius: 10px;
     color: white;
@@ -33,20 +33,14 @@ const LoginBox = styled.div`
   
 `
 const ImagemLogin = styled.img`
-    width: 8rem;
-    height: 8rem;
-    margin: 1rem;
+    margin: 1.5rem;
+    width: 9.5rem;
+    height: auto;
 `
 
 const TituloLogin = styled.h2`
     margin: 2rem 0;
     margin-top: 0;
-    color: white;
-    text-shadow: 2px 3px 4px #000000;
-
-
-
-
 `
 
 const InputLogin = styled.div`
@@ -74,17 +68,22 @@ const ButtonLogin = styled.button`
     justify-content: center;
     border: none;
     background: none;
+    text-decoration: none;
+    a { color: inherit; } 
 `
 
 const ButtonCadastrar = styled.button`
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: none;
     background: none;
+    text-decoration: none;
+    a { width: 60% } 
     
+
 `
 
 

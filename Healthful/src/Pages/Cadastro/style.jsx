@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from '../../Assets/fundo-login.jpg'
+import img from '../../Assets/fundo_cadastro.jpg'
 
 
 const ContainerCadastro = styled.div`
@@ -17,13 +17,13 @@ const ContainerCadastro = styled.div`
 `
 
 const CadastroBox = styled.div`
-    display: flex;
+   display: flex;
     align-items: center;
     flex-direction: column;
     height: 80vh;
     width: 30vw;
-    background-color: rgba(255,255,255, 0.15);
-    box-shadow: 0 8px 32px 0 #1b64115e;
+    background-color: rgba(255,255,255, 0.50);
+    box-shadow: 0 8px 32px 0 rgba(20,188,4,0.15);
     backdrop-filter: blur(8.5px);
     border-radius: 10px;
     color: white;
@@ -33,17 +33,14 @@ const CadastroBox = styled.div`
   
 `
 const ImagemCadastro = styled.img`
-    width: 8rem;
-    height: 8rem;
-    margin: 1rem;
-    
+    margin: 1.5rem;
+    width: 9.5rem;
+    height: auto;
 `
 
 const TituloCadastro = styled.h2`
     margin: 2rem 0;
     margin-top: 0;
-    color: white;
-    text-shadow: 2px 3px 4px #000000;
 `
 
 const InputCadastro = styled.div`
@@ -53,6 +50,7 @@ const InputCadastro = styled.div`
     align-items: center;
     height: 20%;
     width: 100%;
+    gap: 7%;
     
 `
 
@@ -62,19 +60,20 @@ const ParagraphCadastro = styled.div`
     margin-top: 1rem;
 `
 const ButtonEntrar = styled.button`
-
-    width: 60%;
+    margin-top: 5%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: none;
     background: none;
+
     
 `
 
 const ButtonCadastro = styled.button`
-   margin: 1rem;
+    margin: 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;

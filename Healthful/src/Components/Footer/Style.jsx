@@ -1,46 +1,39 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: flex;  
-  flex-direction: column;
-  max-height: 100%;
-  min-height: 100%;
-  @media (min-widht: 600px) {
-    #root{
-      display: flex;
-    }
-  }
-`;
 
-export const FooterDiv = styled.div`
+const FooterDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 15%;
+  height: 20%;
   background-color: #222;
   color: #fff;
   padding: 1.5rem;
   text-align: center;
-  position: fixed;
   bottom: 0;
   list-style-type: none;
+  overflow: hidden;
+
 `;
 
-export const FooterUl = styled.ul`
+
+const FooterP = styled.li`
+  top: 0;
   display: flex;
   justify-content: center;
-  list-style-type: none;
+  align-items: center;
+
 `;
 
-export const FooterLi = styled.li`
-margin: 0 1rem;
-font-size: 1.5rem;
-cursor: pointer;
-`;
-
-export const FooterP = styled.li`
-  margin-top: 2rem;
-`;
-
-export const FooterSpan = styled.li`
+const FooterSpan = styled.li`
   font-weight: bold;
-  color: #ffbb33;
-`;
+  color: #3ec0eb;
+
+  `;
+
+const ImagemFooter = styled.img`
+    width: 10rem;
+    height: 5rem;
+`
+export {FooterSpan, FooterDiv, FooterP, ImagemFooter}

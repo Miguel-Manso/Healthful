@@ -1,8 +1,11 @@
-import { InputComp } from "./style.jsx";
+import { InputSign, InputAlter } from "./style.jsx";
 
-export default function Input({onChange, Id, Name, type, placeholder}) {
-    return(
-        <InputComp  onChange={onChange} id={Id} name={Name} type={type} placeholder={placeholder}></InputComp>
-    )
-}
-
+export default function Input({onChange, Id, Name, type, placeholder, estilo}) {
+    if (estilo == 1){
+            return(
+                <InputAlter  onChange={onChange} id={Id} name={Name} type={type} placeholder={placeholder}></InputAlter>
+            )}   
+    else {
+            return(
+                <InputSign  onChange={onChange} id={Id} name={Name} type={type} placeholder={placeholder}></InputSign>
+            )}}

@@ -1,30 +1,20 @@
-import { Container, FooterDiv, FooterUl, FooterLi, FooterP, FooterSpan } from "./Style.jsx";
-import {FaTiktok, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FooterDiv, FooterP, FooterSpan, ImagemFooter } from "./Style.jsx";
+import Logo from "../../Assets/logo_small.svg"
 
 export function Footer(){
   return(
-    <Container>
+    
       <FooterDiv>
-
-        <FooterUl>
-          <FooterLi>
-            <FaTiktok />
-          </FooterLi>
-
-          <FooterLi>
-            <FaTwitter />
-          </FooterLi>
-
-          <FooterLi>
-            <FaInstagram />
-          </FooterLi>
-        </FooterUl>
-
         <FooterP>
-          <FooterSpan>Healthful &copy; 2022</FooterSpan>
+        <ImagemFooter src={Logo}> 
+        </ImagemFooter>
+
+        
+          <FooterSpan></FooterSpan>
+         
         </FooterP>
 
       </FooterDiv>
-    </Container>
+
   )
 }
