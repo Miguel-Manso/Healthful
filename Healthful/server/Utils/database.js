@@ -2,7 +2,7 @@ export const sqlConfig = {
     server: 'localhost', //server: '10.68.102.4',
     port: 1433,
     user: 'sa',
-    password: 'capeta', //password: 'Admin2018@',
+    password: 'pedro', //password: 'Admin2018@',
     database: 'healthful', //O nome original do arquivo bd é "healthfultcc"
     options: {
       enableArithAbort : true,
