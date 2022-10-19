@@ -22,26 +22,26 @@ export function Users () {
         }))
     };
 
-    const buttonAlt = (id, nome, email, senha) =>{
+    const buttonAlt = (idUser, nome, email, senha) =>{
 
-        Axios.put(`http://localhost:3001/usuario/update/${id}`,{
-            email: email,
-            nome: nome.nome,
-            senha: senha
+        Axios.put(`http://localhost:4000/usuario/alterar/${idUser}`,{
+            emailUser: email,
+            nomeUser: nome.nome,
+            senhaUser: senha
         }).then(window.location.reload(false)
 )
 
         
     }
 
-    const buttonDel = (id, nome, email, senha) =>{
+    const buttonDel = (idUser, nome, email, senha) =>{
 
-        Axios.delete(`http://localhost:3001/usuario/delete/${id}`).then(window.location.reload(false))
+        Axios.delete(`http://localhost:4000/usuario/delete/${idUser}`).then(window.location.reload(false))
        
     }
 
     useEffect(()=>{
-        Axios.get('http://localhost:3001/usuario/get').then((response) => {
+        Axios.get('http://localhost:4000/usuario').then((response) => {
             setUsuarios(response.data)
         })
     },[])
@@ -59,10 +59,10 @@ export function Users () {
                   
                     return(
                         
-                        <NomeUser key={value.id}> {value.nome}
+                        <NomeUser key={value.idUser}> {value.nomeUser}
                             <Input onChange={handleChangeValues} Id="nome" Name="nome" type="text" estilo="1" placeholder="Alterar Nome"/>
-                            <Button onClick={()=>buttonAlt(value.id, alter, value.email, value.senha)} conteudo="Alterar" type="button"/>
-                            <Button onClick={()=>buttonDel(value.id, null, null, null)} conteudo="Deletar" type="button" estilo="3"/>
+                            <Button onClick={()=>buttonAlt(value.idUser, alter, value.emailUser, value.senhaUser)} conteudo="Alterar" type="button"/>
+                            <Button onClick={()=>buttonDel(value.idUser, null, null, null)} conteudo="Deletar" type="button" estilo="3"/>
                         </NomeUser>
                     )
             })}
