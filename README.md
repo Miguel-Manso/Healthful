@@ -3,6 +3,8 @@
 # ⚡ Projeto | Healthful ⚡
 
 ![Image](https://github.com/Miguel-Manso/Healthful/blob/master/Healthful/src/Assets/logo.svg)
+
+
   
 <p>
   <b>Healthful é um site que visa proporcionar auxílio à saúde mental e física do usuário por meio de artigos.</b>
@@ -14,7 +16,7 @@
 
 # 📄 INFORMAÇÕES GERAIS
 
-## 🗿 Em Criação...
+## 🗿 Objetivos a serem alcançadas
 
 ---
 
