@@ -19,10 +19,10 @@ export function Cadastro(){
     };
 
     const HandleClickButton = () =>{
-        Axios.post("http://localhost:3001/usuario/insert", {
-                email: values.email,
-                senha: values.senha,
-                nome: values.nome
+        Axios.post("http://localhost:4000/usuario/novo", {
+            emailUser: values.email,
+            senhaUser: values.senha,
+            nomeUser: values.nome
                 
                 
             }).then(navigate('/login', {replace: true}))
