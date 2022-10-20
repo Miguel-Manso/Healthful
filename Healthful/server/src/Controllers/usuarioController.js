@@ -53,4 +53,16 @@ export class UsuarioController{
             return res.status(500).json(err)
         }
     }
+
+    static async loginUsuario(req, res){
+        try {
+            const {nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate} = req.body
+            const login_Usuario = await new Usuario(nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate).login()
+            return res.status(200).json(login_Usuario)
+        } 
+        catch (error) {
+            console.log('Erro no usuarioController | loginUsuario | ' + error)
+        }
+    }
+
 }

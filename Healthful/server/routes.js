@@ -7,5 +7,6 @@ routes.get('/usuario', UsuarioController.selectUsuario)
 routes.post('/usuario/novo', UsuarioController.novoUsuario)
 routes.put('/usuario/alterar/:idUser', UsuarioController.updateUsuario)
 routes.delete('/usuario/delete/:idUser', UsuarioController.deleteUsuario)
+routes.post('/usuario/login', UsuarioController.loginUsuario)
 
 export { routes }
