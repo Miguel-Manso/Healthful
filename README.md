@@ -5,8 +5,8 @@
 ![Image](https://github.com/Miguel-Manso/Healthful/blob/master/Healthful/src/Assets/logo.svg)
 
 <p align="center">
- <a href="#-objetivos-a-serem-alcançadas">Objetivos</a> •
- <a href="#-equipe-healthful">Equipe</a>
+ <a href="#-desenvolvimento">Desenvolvimento</a> •
+ <a href="#-nossa-equipe-healthful">Equipe</a>
 </p>
   
 <p>
@@ -17,13 +17,59 @@
 
 ---
 
-# 📄 INFORMAÇÕES GERAIS
+## 🚀 Desenvolvimento
 
-## 🗿 Objetivos a serem alcançadas
+<h3>Colocar algumas imagens do nosso desenvolvimento</h3>
+
+---
+## 🖥️ Front End
+
+<div align="left">
+
+
+
+</div>
+
+---
+## 🖥️ Back End
 
 ---
 
-## 💚 Equipe Healthful
+<h4 align="center"> 
+	✔️ Crud Concluído ✔️
+</h4>
+
+<h4>O nosso CRUD deu inicio em 08/09/2022, para ser utilizado no Back-End do nosso projeto, com o objetivo de ter as 4 principais funções. <br>
+( Get, Insert, Update e Delete )</h4>
+
+<div align="left">
+
+## 👾 Objetivos Alcançados
+
+• Criação do Servidor em Node.js <br/>
+• Estrutura MVC <br/>
+• Conexão do banco de dados Sql Server <br/>
+
+---
+## ⚙ As Ferramentas Utilizadas
+
+• Visual Code <br/>
+• Sql Server <br/>
+
+---
+## 📦 As Dependências Que Utilizamos
+
+• npm init -y <br/>
+• npm i express <br/>
+• npm i cors <br/>
+• npm i mssql <br/>
+• npm i nodemon <br/>
+
+</div>
+
+---
+
+## 💚 Nossa Equipe Healthful
 
 <table align='center'>
 
