@@ -33,8 +33,6 @@
 ---
 ## 🖥️ Back End
 
----
-
 <h4 align="center"> 
 	✔️ Crud Concluído ✔️
 </h4>
