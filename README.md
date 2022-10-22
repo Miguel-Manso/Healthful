@@ -57,11 +57,13 @@
 ---
 ## 📦 As Dependências Que Utilizamos
 
-• npm init -y <br/>
-• npm i express <br/>
-• npm i cors <br/>
-• npm i mssql <br/>
-• npm i nodemon <br/>
+• axios <br/>
+• express <br/>
+• mssql <br/>
+• cors <br/>
+• nodemon <br/>
+• styled-components <br/>
+• react-router-dom <br/>
 
 </div>
 
