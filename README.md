@@ -19,7 +19,7 @@
 
 ## 🚀 Desenvolvimento
 
-<h3>Colocar algumas imagens do nosso desenvolvimento</h3>
+<h3>Colocar algumas imagens, videos ou gif do nosso desenvolvimento</h3>
 
 ---
 ## 🖥️ Front End
