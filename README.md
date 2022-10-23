@@ -44,26 +44,26 @@
 
 ## 👾 Objetivos Alcançados
 
-• Criação do Servidor em Node.js <br/>
-• Estrutura MVC <br/>
-• Conexão do banco de dados Sql Server <br/>
+- [ ] Criação do Servidor em Node.js <br/>
+- [ ] Estrutura MVC <br/>
+- [ ] Conexão do banco de dados Sql Server <br/>
 
 ---
-## ⚙ As Ferramentas Utilizadas
+## ⚙ Ferramentas Utilizadas
 
-• Visual Code <br/>
-• Sql Server <br/>
+- [ ] Visual Code <br/>
+- [ ] Sql Server <br/>
 
 ---
-## 📦 As Dependências Que Utilizamos
+## 📦 Dependências Que Utilizamos
 
-• axios <br/>
-• express <br/>
-• mssql <br/>
-• cors <br/>
-• nodemon <br/>
-• styled-components <br/>
-• react-router-dom <br/>
+- [ ] axios <br/>
+- [ ] express <br/>
+- [ ] mssql <br/>
+- [ ] cors <br/>
+- [ ] nodemon <br/>
+- [ ] styled-components <br/>
+- [ ] react-router-dom <br/>
 
 </div>
 
@@ -78,7 +78,7 @@
     </td>
     <td align="center"><a href="https://github.com/PedroAugustoB"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99665373?v=4" width="100px;" alt="foto Pedro"/><br /><sub><b>Pedro Augusto B.</b></sub></a><br/>
     </td>
-     <td align="center"><a href="https://github.com/Miguel-Manso"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/8761915?v=4" width="100px;" alt="foto Miguel"/><br /><sub><b>Miguel Manso</b></sub></a><br/>
+     <td align="center"><a href="https://github.com/Miguel-Manso"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/8761915?v=4" width="100px;" alt="foto Miguel"/><br /><sub><b>Miguel Manso <br> Scrum Master</b></sub></a><br/>
     </td>
     <td align="center"><a href="https://github.com/PabloLdS"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99665625?v=4" width="100px;" alt="foto Pablo"/><br /><sub><b>Pablo Lemes</b></sub></a><br/>
     </td>
