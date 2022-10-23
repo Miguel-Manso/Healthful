@@ -13,7 +13,7 @@ const UsersBox = styled.div `
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    min-height: 80vh;
     min-width: 30vw;
     background-color: #ffffffcf;
     box-shadow: 0 8px 32px 0 #000000bb;

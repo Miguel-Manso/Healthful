@@ -21,12 +21,12 @@ export function Login(){
     const navigate = useNavigate()
 
     const HandleClickButton = () =>{
-        Axios.post("http://localhost:3001/usuario/login", {
-                email: values.email,
-                senha: values.senha
+        Axios.post("http://localhost:4000/usuario/login", {
+                emailUser: values.email,
+                senhaUser: values.senha
             }).then((response) =>{
                 console.log(response)
-                if (values.email == response.data[0].email && values.senha ==  response.data[0].senha){
+                if (values.email == response.data[0].emailUser && values.senha ==  response.data[0].senhaUser){
                   navigate('/', {replace: true})
                 }
             })

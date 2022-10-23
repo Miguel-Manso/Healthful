@@ -12,6 +12,7 @@ const ContainerCadastro = styled.div`
     align-items: center;
     background-image: url(${img} );
     background-size: cover;
+    overflow: auto;
     
 
 `
@@ -20,8 +21,8 @@ const CadastroBox = styled.div`
    display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
-    width: 30vw;
+    min-height: 80vh;
+    min-width: 30vw;
     background-color: rgba(255,255,255, 0.50);
     box-shadow: 0 8px 32px 0 rgba(20,188,4,0.15);
     backdrop-filter: blur(8.5px);
@@ -29,6 +30,10 @@ const CadastroBox = styled.div`
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+    input {
+        margin: 1%;
+    }
+    
     
   
 `
@@ -73,7 +78,7 @@ const ButtonEntrar = styled.button`
 `
 
 const ButtonCadastro = styled.button`
-    margin: 3rem;
+    margin: 1.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;

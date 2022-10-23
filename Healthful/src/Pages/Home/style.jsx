@@ -9,7 +9,8 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #414141;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
 
 `;
 
@@ -19,10 +20,14 @@ const Secao = styled.div`
     align-items:center;
     align-content:center;
     width: 100%;
-    height: 88%;
+    min-height: 88%;
+    max-height: fit-content;
     background-image: url(${banner});
     background-size: cover;
     box-shadow: 0px 4px 4px 2px rgba(0,0,0,0.1);
+    word-wrap: break-word
+
+
     
 
 `;
@@ -51,6 +56,8 @@ const Titulo = styled.p`
     font-size: 45px;        
     color: white;
     justify-content: center;
+    position: relative;
+    
 
 `;
 

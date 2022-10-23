@@ -112,18 +112,21 @@ export class Usuario{
 
 
 
-async Login(){
-    try {
-        const { recordset } = await Connection.query(`SELECT nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate, idUser from usuario WHERE nomeUser = '${this.nomeUser}', emailUser = '${this.emailUser}', senhaUser = '${this.senhaUser}', dtNasc = '${this.dtNasc}', nivelUser = ${this.nivelUser}, statusUser = ${this.statusUser}, dataInsert = '${this.dataInsert}', dataUpdate = '${this.dataUpdate}' where idUser = ${this.idUser}'`)
-        if (recordset.length > 0)
-            return recordset
-        else
-            return false
-    } 
-    catch (error) 
-    {
-        console.log('Error no usuarioModel | Login | ' + error)
-        return error
+    async Login(){
+        try {
+            const { recordset } = await Connection.query(`SELECT emailUser, senhaUser, idUser FROM usuario 
+                WHERE emailUser = '${this.emailUser}' and senhaUser = '${this.senhaUser}'`)
+            if (recordset.length > 0)
+                return recordset
+            else
+                return false
+        } 
+        catch (error) 
+        {
+            console.log('Model error ' + error)
+            return error
+        }
     }
-}
+
+
 }

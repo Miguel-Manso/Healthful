@@ -3,8 +3,9 @@ import img from '../../Assets/fundo_login.jpg'
 
 
 const ContainerLogin = styled.div`
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
+    overflow: auto;
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
     font-family: 'Ubuntu', sans-serif;
     display: flex;
@@ -12,7 +13,7 @@ const ContainerLogin = styled.div`
     align-items: center;
     background-image: url(${img} );
     background-size: cover;
-    
+   
 
 `
 
@@ -20,8 +21,8 @@ const LoginBox = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
-    width: 30vw;
+    min-height: 80vh;
+    min-width: 30vw;
     background-color: rgba(255,255,255, 0.50);
     box-shadow: 0 8px 32px 0 rgba(20,188,4,0.15);
     backdrop-filter: blur(8.5px);
@@ -29,8 +30,12 @@ const LoginBox = styled.div`
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+   
+    input {
+        margin: 1%;
+    }
     
-  
+
 `
 const ImagemLogin = styled.img`
     margin: 1.5rem;
@@ -50,7 +55,8 @@ const InputLogin = styled.div`
     align-items: center;
     height: 20%;
     width: 100%;
-    
+  
+
 `
 
 const ParagraphLogin = styled.div`
