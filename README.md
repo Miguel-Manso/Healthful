@@ -42,6 +42,13 @@
 ![React.js](https://img.shields.io/badge/-React.js-0D1117?style=for-the-badge&logo=react&labelColor=0D1117)&nbsp; <br>
 ![Vite.js](https://img.shields.io/badge/-Vite.js-0D1117?style=for-the-badge&logo=Vite&labelColor=0D1117)&nbsp;
 
+---
+## 👾 Requisitos
+
+- [ ] Criação do Front-End com React.js <br/>
+- [ ] Estrutura MVC <br/>
+- [ ] Extensão Vite.js <br/>
+
 </div>
 
 ---
@@ -58,7 +65,7 @@
 
 <div align="left">
 
-## 👾 Objetivos Alcançados
+## 👾 Funcionalidades
 
 - [ ] Criação do Servidor em Node.js <br/>
 - [ ] Estrutura MVC <br/>
@@ -67,8 +74,8 @@
 ---
 ## ⚙ Ferramentas Utilizadas
 
-- [ ] Visual Code <br/>
-- [ ] Sql Server <br/>
+![Node.JS](https://img.shields.io/badge/-Node.JS-0D1117?style=for-the-badge&logo=node.js&labelColor=0D1117&textColor=0D1117)&nbsp; <br>
+![SqlServer](https://img.shields.io/badge/-Sql%20Server-0D1117?style=for-the-badge&logo=Microsoft-SQL-Server&labelColor=0D1117)&nbsp;
 
 ---
 ## 📦 Dependências
