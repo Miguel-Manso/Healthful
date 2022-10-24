@@ -3,11 +3,6 @@
 # ⚡ Projeto | Healthful ⚡
 
 ![Image](https://github.com/Miguel-Manso/Healthful/blob/master/Healthful/src/Assets/logo.svg)
-
-<p align="center">
- <a href="#-desenvolvimento">Desenvolvimento</a> •
- <a href="#-nossa-equipe-healthful">Equipe</a>
-</p>
   
 <p>
   <b>Healthful é um site que visa proporcionar auxílio à saúde mental e física do usuário por meio de artigos.</b>
@@ -17,16 +12,35 @@
 
 ---
 
-## 🚀 Desenvolvimento
+## 📽️ Demonstração 
 
 <h3>Colocar algumas imagens, videos ou gif do nosso desenvolvimento</h3>
 
 ---
 ## 🖥️ Front End
 
+<h4 align="center">
+
+🚧 Em Andamento... 🚧
+
+</h4>
+
+<h4>A parte do nosso Front-End começou no mês de Setembro, dando continuidade até o presente momento.</h4>
+
 <div align="left">
 
+## 🧱 Desenvolvimento
+- [ ] Tela de Login
+- [ ] Tela de Cadastro
+- [ ] Home
+- [ ] Criação de Artigos
+- [ ] Artigos
 
+---
+## 📦 Linguagem e Extensões
+
+![React.js](https://img.shields.io/badge/-React.js-0D1117?style=for-the-badge&logo=react&labelColor=0D1117)&nbsp; <br>
+![Vite.js](https://img.shields.io/badge/-Vite.js-0D1117?style=for-the-badge&logo=Vite&labelColor=0D1117)&nbsp;
 
 </div>
 
@@ -34,7 +48,9 @@
 ## 🖥️ Back End
 
 <h4 align="center"> 
-	✔️ Crud Concluído ✔️
+
+✔️ Crud Concluído ✔️
+
 </h4>
 
 <h4>O nosso CRUD deu inicio em 08/09/2022, para ser utilizado no Back-End do nosso projeto, com o objetivo de ter as 4 principais funções. <br>
@@ -55,7 +71,7 @@
 - [ ] Sql Server <br/>
 
 ---
-## 📦 Dependências Que Utilizamos
+## 📦 Dependências
 
 - [ ] axios <br/>
 - [ ] express <br/>
