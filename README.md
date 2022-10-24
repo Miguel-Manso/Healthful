@@ -3,11 +3,6 @@
 # ⚡ Projeto | Healthful ⚡
 
 ![Image](https://github.com/Miguel-Manso/Healthful/blob/master/Healthful/src/Assets/logo.svg)
-
-<p align="center">
- <a href="#-desenvolvimento">Desenvolvimento</a> •
- <a href="#-nossa-equipe-healthful">Equipe</a>
-</p>
   
 <p>
   <b>Healthful é um site que visa proporcionar auxílio à saúde mental e física do usuário por meio de artigos.</b>
@@ -17,16 +12,42 @@
 
 ---
 
-## 🚀 Desenvolvimento
+## 📽️ Demonstração 
 
 <h3>Colocar algumas imagens, videos ou gif do nosso desenvolvimento</h3>
 
 ---
 ## 🖥️ Front End
 
+<h4 align="center">
+
+🚧 Em Andamento... 🚧
+
+</h4>
+
+<h4>A parte do nosso Front-End começou no mês de Setembro, dando continuidade até o presente momento.</h4>
+
 <div align="left">
 
+## 🧱 Desenvolvimento
+- [ ] Tela de Login
+- [ ] Tela de Cadastro
+- [ ] Home
+- [ ] Criação de Artigos
+- [ ] Artigos
 
+---
+## 📦 Linguagem e Extensões
+
+![React.js](https://img.shields.io/badge/-React.js-0D1117?style=for-the-badge&logo=react&labelColor=0D1117)&nbsp; <br>
+![Vite.js](https://img.shields.io/badge/-Vite.js-0D1117?style=for-the-badge&logo=Vite&labelColor=0D1117)&nbsp;
+
+---
+## 👾 Requisitos
+
+- [ ] Criação do Front-End com React.js <br/>
+- [ ] Estrutura MVC <br/>
+- [ ] Extensão Vite.js <br/>
 
 </div>
 
@@ -34,7 +55,9 @@
 ## 🖥️ Back End
 
 <h4 align="center"> 
-	✔️ Crud Concluído ✔️
+
+✔️ Crud Concluído ✔️
+
 </h4>
 
 <h4>O nosso CRUD deu inicio em 08/09/2022, para ser utilizado no Back-End do nosso projeto, com o objetivo de ter as 4 principais funções. <br>
@@ -42,7 +65,7 @@
 
 <div align="left">
 
-## 👾 Objetivos Alcançados
+## 👾 Funcionalidades
 
 - [ ] Criação do Servidor em Node.js <br/>
 - [ ] Estrutura MVC <br/>
@@ -51,11 +74,11 @@
 ---
 ## ⚙ Ferramentas Utilizadas
 
-- [ ] Visual Code <br/>
-- [ ] Sql Server <br/>
+![Node.JS](https://img.shields.io/badge/-Node.JS-0D1117?style=for-the-badge&logo=node.js&labelColor=0D1117&textColor=0D1117)&nbsp; <br>
+![SqlServer](https://img.shields.io/badge/-Sql%20Server-0D1117?style=for-the-badge&logo=Microsoft-SQL-Server&labelColor=0D1117)&nbsp;
 
 ---
-## 📦 Dependências Que Utilizamos
+## 📦 Dependências
 
 - [ ] axios <br/>
 - [ ] express <br/>
