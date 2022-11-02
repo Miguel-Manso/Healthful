@@ -88,6 +88,24 @@ const ButtonCadastro = styled.button`
     background: none;
 `
 
+const LinhaHorizontal = styled.hr`
+    width: 90%;
+    height: 0.3rem;
+    border-radius: 0.8rem;
+    border: none;
+    margin: 1.5rem 0 1rem 0;
+    background: linear-gradient(90deg, rgba(15,123,5,1) 0%, rgba(18,161,3,1) 30%, rgba(20,188,2,1) 50%, rgba(23,216,1,1) 70%, rgba(25,244,0,1) 100%);
+  
+`
+const IconsContainer = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 3rem 0;
+    width: 80%;
+
+`
 
 
-export {ContainerCadastro, CadastroBox, TituloCadastro, InputCadastro, ButtonEntrar, ButtonCadastro, ImagemCadastro, ParagraphCadastro}
+
+
+export {ContainerCadastro, CadastroBox, TituloCadastro, InputCadastro, ButtonEntrar, ButtonCadastro, ImagemCadastro, ParagraphCadastro, LinhaHorizontal, IconsContainer}

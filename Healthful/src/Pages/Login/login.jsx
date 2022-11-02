@@ -1,10 +1,14 @@
-import { ButtonLogin, ContainerLogin, InputLogin, LoginBox, ButtonCadastrar, TituloLogin, ImagemLogin, ParagraphLogin} from "./style.jsx"
+import { ButtonLogin, ContainerLogin, InputLogin, LoginBox, ButtonCadastrar, TituloLogin, ImagemLogin, ParagraphLogin, LinhaHorizontal, IconsContainer} from "./style.jsx"
 import Logo from "../../Assets/logo_small.svg"
 import Input from "../../Components/Input/input.jsx"
 import Button from "../../Components/Button/button.jsx"
 import { Link, useNavigate } from "react-router-dom"
 import Axios from 'axios'
 import { useState } from "react";
+import Icon from "../../Components/IconComp/icon.jsx"
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+
+
 
 
 
@@ -57,7 +61,16 @@ export function Login(){
         <Button conteudo="Cadastre-se" estilo="1" type="button"/>
         </ButtonCadastrar>
         </Link>
-      
+
+        <LinhaHorizontal />
+
+        <IconsContainer>
+            <Icon estilo="1" conteudo={<FaFacebookF />}></Icon>
+            <a target="blank" href="https://www.instagram.com/healthful.oficial/"> <Icon estilo="2" conteudo={<FaInstagram />}></Icon></a>
+            <Icon conteudo={<FaTwitter />}></Icon>
+            
+            
+        </IconsContainer>
 
         </LoginBox>
         </ContainerLogin>

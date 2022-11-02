@@ -1,10 +1,12 @@
-import { ButtonCadastro, ContainerCadastro, InputCadastro, CadastroBox, TituloCadastro, ButtonEntrar, ImagemCadastro, ParagraphCadastro} from "./style.jsx"
+import { ButtonCadastro, ContainerCadastro, InputCadastro, CadastroBox, TituloCadastro, ButtonEntrar, ImagemCadastro, ParagraphCadastro, LinhaHorizontal, IconsContainer} from "./style.jsx"
 import Logo from "../../Assets/logo_small.svg"
 import Input from "../../Components/Input/input.jsx"
 import { Link, useNavigate } from "react-router-dom"
 import Button from "../../Components/Button/button.jsx"
 import Axios from 'axios'
 import { useState } from "react";
+import Icon from "../../Components/IconComp/icon.jsx"
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa"
 
 
 export function Cadastro(){
@@ -41,8 +43,8 @@ export function Cadastro(){
 
         <InputCadastro>
             <Input onChange={HandleChangeValues} Id="nome" Name="nome" type="text" placeholder="Nome"/>
-            <Input onChange={HandleChangeValues} Id="email" Name="email" type="text" placeholder="Email"/>
             <Input onChange={HandleChangeValues} Id="senha" Name="senha" type="password" placeholder="Senha"/>
+            <Input onChange={HandleChangeValues} Id="email" Name="email" type="text" placeholder="Email"/>
         </InputCadastro>
 
         <ButtonCadastro>
@@ -55,6 +57,12 @@ export function Cadastro(){
         </Link>
         </ButtonCadastro>
         
+        <LinhaHorizontal />
+        <IconsContainer>
+            <Icon estilo="1" conteudo={<FaFacebookF />}></Icon>
+            <a target="blank" href="https://www.instagram.com/healthful.oficial/"> <Icon estilo="2" conteudo={<FaInstagram />}></Icon></a>
+            <Icon conteudo={<FaTwitter />}></Icon>
+        </IconsContainer>
        
         
 
