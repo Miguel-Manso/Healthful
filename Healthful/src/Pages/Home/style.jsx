@@ -102,45 +102,14 @@ const TextoArtigos = styled.p`
   font-weight: lighter;
   flex-direction: row;
   text-align: left;
-`;
-
-const TextoArtigos2 = styled.p`
-  width: 50%;
-  margin: 2.5rem;
-  color: black;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: lighter;
-  flex-direction: row;
-  text-align: right;
+  
 `;
 
 const ImagemArtigo = styled.img`
   height: 10rem;
   margin: 0.3rem;
-  
-`;
-
-const Botão = styled.button`
-  color: #ffffff;
-  background-color: #14bc04;
-  border: 1px #212121 ;
-  text-transform: uppercase;
-  letter-spacing: 0.2 rem;
-  width: 10%;
-  height: 2.5rem;
-  border: none ;
-  border-radius: 2rem;
-  cursor: pointer;
-  a { color: inherit; } 
-  text-decoration: none;
-  &:hover{
-  background-color: #761b1b; /* Green */
-  color: white;
-  transition-duration: 0.4s
-  }
 `;
 
 export { Container, Seção, Titulo, Titulos,
 Cartão, TextoCartão, TituloCartão, ImagemCartão, ImagemCategoria, 
-Artigos, TextoArtigos, TextoArtigos2, ImagemArtigo, Botão } 
+Artigos, TextoArtigos, ImagemArtigo } 
