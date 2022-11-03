@@ -11,6 +11,7 @@ const MenuLink = styled.a`
   font-weight: 700;
   transition: all 0.3s ease-in;
   font-size: 0.9rem;
+  width: 100%;
   a { color: inherit; } 
   &:hover {
     color: #0b8700;
@@ -43,12 +44,12 @@ const Nav = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  position: fixed;
+  position: top;
   z-index: 9999;
 `;
 const ImagemNav = styled.img`
-    width: fit-content;
-    height: 6rem;
+    width:auto, fit-content;
+    height: 5rem;
 `
 
 

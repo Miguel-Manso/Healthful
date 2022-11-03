@@ -14,6 +14,7 @@ const FooterDiv = styled.div`
   bottom: 0;
   list-style-type: none;
   overflow: hidden;
+  margin: none;
 
 `;
 
@@ -23,17 +24,21 @@ const FooterP = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1%;
+  width: 100%;
 
 `;
 
 const FooterSpan = styled.li`
   font-weight: bold;
   color: #3ec0eb;
+  
 
   `;
 
 const ImagemFooter = styled.img`
     width: 10rem;
     height: 5rem;
+    margin: 1%;
 `
 export {FooterSpan, FooterDiv, FooterP, ImagemFooter}

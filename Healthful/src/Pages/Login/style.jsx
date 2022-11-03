@@ -13,6 +13,10 @@ const ContainerLogin = styled.div`
     align-items: center;
     background-image: url(${img} );
     background-size: cover;
+    padding:1%;
+
+  
+
    
 
 `
@@ -21,8 +25,10 @@ const LoginBox = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 80vh;
-    min-width: 30vw;
+    min-height: 500px;
+    min-width: 400px;
+    max-height: 800px;
+    max-width: 500px;
     background-color: rgba(255,255,255, 0.50);
     box-shadow: 0 8px 32px 0 rgba(20,188,4,0.15);
     backdrop-filter: blur(8.5px);
@@ -30,7 +36,9 @@ const LoginBox = styled.div`
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
-   
+    margin-top: 2%;
+
+    
     input {
         margin: 1%;
     }
@@ -38,13 +46,13 @@ const LoginBox = styled.div`
 
 `
 const ImagemLogin = styled.img`
-    margin: 1.5rem;
+    margin-top:8%; 
     width: 9.5rem;
     height: auto;
 `
 
 const TituloLogin = styled.h2`
-    margin: 2rem 0;
+    margin: 2%;
     margin-top: 0;
 `
 
@@ -66,7 +74,7 @@ const ParagraphLogin = styled.div`
 `
 
 const ButtonLogin = styled.button`
-    margin: 1rem;
+    margin-top: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -88,6 +96,7 @@ const ButtonCadastrar = styled.button`
     background: none;
     text-decoration: none;
     a { width: 60% } 
+    margin:5%;
     
 
 `
@@ -96,14 +105,14 @@ const LinhaHorizontal = styled.hr`
     height: 0.3rem;
     border-radius: 0.8rem;
     border: none;
-    margin: 1.5rem 0 1rem 0;
     background: linear-gradient(90deg, rgba(15,123,5,1) 0%, rgba(18,161,3,1) 30%, rgba(20,188,2,1) 50%, rgba(23,216,1,1) 70%, rgba(25,244,0,1) 100%);
   
 `
 const IconsContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
-    margin: 2rem 0 3rem 0;
+    margin:2%;
+    
     width: 80%;
 
 `

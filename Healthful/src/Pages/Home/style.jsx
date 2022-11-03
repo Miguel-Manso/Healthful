@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items: center;
   background-color: #414141;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 `;
 
 const Seção = styled.div`
@@ -77,6 +77,7 @@ const TextoCartão = styled.p`
 
 const ImagemCartão = styled.img`
   height: 8rem;
+  width: 100%;
 `;
 
 const ImagemCategoria = styled.img`
@@ -108,6 +109,8 @@ const TextoArtigos = styled.p`
 const ImagemArtigo = styled.img`
   height: 10rem;
   margin: 0.3rem;
+  margin-left: 25%;
+  margin-top: 2%;
 `;
 
 export { Container, Seção, Titulo, Titulos,

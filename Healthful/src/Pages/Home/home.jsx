@@ -87,6 +87,7 @@ export function Home () {
                   FÁCIL DE ACHO-LÓS ATRAVÉS DA ABA DE 
                   <br/>
                   CATEGORIAS.
+                  <br/>
                   <ImagemArtigo src={Escrever} />
                 </TextoArtigos>
 
@@ -96,6 +97,7 @@ export function Home () {
                   ARTIGOS E DAR SUA 
                   <br/>
                   OPINIÃO NUM ARTIGO.
+                  <br/>
                   <ImagemArtigo src={Artigo} />
                 </TextoArtigos>
 
@@ -107,12 +109,24 @@ export function Home () {
                   PODEMOS GARANTIR A QUALIDADE E A VALIDEZ 
                   <br/>
                   DOS NOSSOS ARTIGOS.
+                  <br/>
                   <ImagemArtigo src={Perfil} />
                 </TextoArtigos>
 
                 <TextoArtigos>
-                  PARA CRIAR UM ARTIGO VOCÊ DEVE TER UMA <br/> CONTA NO NOSSO SITE E DEFINIR O SETOR DA <br/> SAÚDE ONDE ATUA ALÉM DE COMPROVAR O <br/> CERTIFICADO PARA QUE TENHAMOS UMA VALIDEZ E UMA <br/> SEGURANÇA DOS ARTIGOS EM <br/> NOSSO SITE.
-                  <ImagemArtigo src={Certificado} />
+                  PARA CRIAR UM ARTIGO VOCÊ DEVE TER UMA 
+                  <br/> 
+                  CONTA NO NOSSO SITE E DEFINIR O SETOR DA 
+                  <br/> 
+                  SAÚDE ONDE ATUA ALÉM DE COMPROVAR O 
+                  <br/> 
+                  CERTIFICADO PARA QUE TENHAMOS UMA VALIDEZ E UMA 
+                  <br/> 
+                  SEGURANÇA DOS ARTIGOS EM 
+                  <br/> 
+                  NOSSO SITE.
+                  <br/>
+                  <ImagemArtigo src={Certificado}></ImagemArtigo>
                 </TextoArtigos>
 
             </Artigos>
