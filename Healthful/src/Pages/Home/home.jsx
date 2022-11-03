@@ -3,16 +3,17 @@ import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { Container, Seção, Titulos, Titulo, 
 Cartão, TextoCartão, TituloCartão, ImagemCartão, ImagemCategoria, 
-Artigos, TextoArtigos, TextoArtigos2, ImagemArtigo, Botão } from "./style.jsx";
+Artigos, TextoArtigos, ImagemArtigo } from "./style.jsx";
 /*______________________________________________________________*/
 
 /* Importação das Imagens | Utilizadas na Healthful*/
 import loguinha from "../../Assets/logo.svg";
 import Bike from "../../Assets/Bike.svg";
 import Caminhar from "../../Assets/Caminhada.svg";
-import Flexão from "../../Assets/Flexão.svg";
+import Abdomen from "../../Assets/Abdomen.svg";
 import Medico from "../../Assets/Medico.svg";
-import Alimento from "../../Assets/Alimento.svg";
+import Comidinhas from "../../Assets/Comidinhas.svg";
+
 /*_______________________________________________*/
 
 /* Importação das Imagens | Utilizadas no Artigo*/
@@ -64,12 +65,12 @@ export function Home () {
               ACESSE ABAIXO PARA LER NOSSOS ARTIGOS OU CRIE UM ARTIGO.
               <br/>
               
-              <ImagemCategoria src={Bike} />
+              <ImagemCategoria src={Bike} /> 
               <ImagemCategoria src={Caminhar} />
-              <ImagemCategoria src={Flexão} />
+              <ImagemCategoria src={Abdomen} />
               <ImagemCategoria src={Medico} />
-              <ImagemCategoria src={Alimento} />
-
+              <ImagemCategoria src={Comidinhas} /> 
+              
             </TextoCartão>
 
             <TituloCartão>
@@ -78,7 +79,7 @@ export function Home () {
 
             <Artigos>
 
-                <TextoArtigos2>
+                <TextoArtigos>
                   OS ARTIGOS SERÃO SEPARADOS POR 
                   <br/>
                   CATEGORIAS. DESSE MODO FICA MAIS 
@@ -87,7 +88,7 @@ export function Home () {
                   <br/>
                   CATEGORIAS.
                   <ImagemArtigo src={Escrever} />
-                </TextoArtigos2>
+                </TextoArtigos>
 
                 <TextoArtigos>
                   VOCÊ TAMBÉM PODE SALVAR 
@@ -98,7 +99,7 @@ export function Home () {
                   <ImagemArtigo src={Artigo} />
                 </TextoArtigos>
 
-                <TextoArtigos2>
+                <TextoArtigos>
                   SOMENTE PROFISSIONAIS DA SAÚDE PODEM
                   <br/>
                   ESCREVER E PUBLICAR ARTIGOS, COM ISSO
@@ -107,14 +108,12 @@ export function Home () {
                   <br/>
                   DOS NOSSOS ARTIGOS.
                   <ImagemArtigo src={Perfil} />
-                </TextoArtigos2>
+                </TextoArtigos>
 
                 <TextoArtigos>
                   PARA CRIAR UM ARTIGO VOCÊ DEVE TER UMA <br/> CONTA NO NOSSO SITE E DEFINIR O SETOR DA <br/> SAÚDE ONDE ATUA ALÉM DE COMPROVAR O <br/> CERTIFICADO PARA QUE TENHAMOS UMA VALIDEZ E UMA <br/> SEGURANÇA DOS ARTIGOS EM <br/> NOSSO SITE.
                   <ImagemArtigo src={Certificado} />
                 </TextoArtigos>
-
-                <Botão onClick={()=>HandleClickButton()} type="button">CRIAR ARTIGOS</Botão>
 
             </Artigos>
 
