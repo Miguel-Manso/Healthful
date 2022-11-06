@@ -1,27 +1,21 @@
-/* Importações de Componentes*/
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
-import { Container, Seção, Titulos, Titulo, 
-Cartão, TextoCartão, TituloCartão, ImagemCartão, ImagemCategoria, 
-Artigos, TextoArtigos, ImagemArtigo } from "./style.jsx";
-/*______________________________________________________________*/
+import { Container, BannerTexto, Banner, ImagemCategoria, ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, SecaoBanner, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador } from "./style.jsx";
+import Logo from "../../Assets/logo.svg";
 
-/* Importação das Imagens | Utilizadas na Healthful*/
-import loguinha from "../../Assets/logo.svg";
-import Bike from "../../Assets/Bike.svg";
-import Caminhar from "../../Assets/Caminhada.svg";
-import Abdomen from "../../Assets/Abdomen.svg";
-import Medico from "../../Assets/Medico.svg";
-import Comidinhas from "../../Assets/Comidinhas.svg";
+/*PlaceHolder*/
+import Bike from "../../Assets/Placeholder/Bike.svg";
+import Caminhar from "../../Assets/Placeholder/Caminhar.svg";
+import Abdomen from "../../Assets/Placeholder/Abdomen.svg";
+import Medico from "../../Assets/Placeholder/Medico.svg";
+import Comidas from "../../Assets/Placeholder/Comidas.svg";
 
-/*_______________________________________________*/
+import Escrita from "../../Assets/HomeImg/escritas.svg";
+import Salvos from "../../Assets/HomeImg/artigos_salvos.svg";
+import Perfil from "../../Assets/HomeImg/perfil.svg";
+import Certificado from "../../Assets/HomeImg/certificados.svg";
+import { CardComp } from "../../Components/Cards/cards.jsx";
 
-/* Importação das Imagens | Utilizadas no Artigo*/
-import Escrever from "../../Assets/Escrevendo.svg";
-import Artigo from "../../Assets/Artigos-favoritos.svg";
-import Perfil from "../../Assets/Perfil_do_criador.svg";
-import Certificado from "../../Assets/Certificados.svg";
-/*_______________________________________________*/
 
 export function Home () {
   return (
@@ -29,9 +23,9 @@ export function Home () {
       <Container>
         <Navbar />
             
-          <Seção>
-            <Titulos>
-              <Titulo>
+          <SecaoBanner>
+            <Banner>
+              <BannerTexto>
                 “Que desgraça é para o
                   <br />  
                 homem envelhecer sem
@@ -39,100 +33,116 @@ export function Home () {
                 nunca ver a beleza e a força
                   <br /> 
                 do que o seu corpo é capaz”
-              </Titulo>
+              </BannerTexto>
               <span>Sócrates</span >
-            </Titulos> 
-          </Seção>
+            </Banner> 
+          </SecaoBanner>
 
-          <Cartão>
-            <TextoCartão>
-              Seja bem-vindo à plataforma de artigos voltado à saúde.
+          
+          <Apresentacao>
+            <p>Bem-vindos à plataforma de artigos voltados à saúde.</p>
+          </Apresentacao>
 
-              <ImagemCartão 
-                src={loguinha}>
-              </ImagemCartão>
-            </TextoCartão>
+          <LogoHealthful>
+            <img src={Logo} style={{width : '70% ', height : 'auto'}}/>
+          </LogoHealthful>
 
-            <TituloCartão>
-              O QUE É A HEALTHFUL ?
-            </TituloCartão>
 
-            <TextoCartão>
-              A HEALTHFUL É UMA PLATAFORMA DE ARTIGOS VOLTADO AO
-               <br/>
-              SETOR DA SAÚDE, COM O FOCO EM MELHORIA DE VIDA.
-               <br/>
-              ACESSE ABAIXO PARA LER NOSSOS ARTIGOS OU CRIE UM ARTIGO.
-              <br/>
+        <HomeTitulo>
+          O Que É A Healthful?
+        </HomeTitulo>
+    
+        <HomeTexto style={{  'margin-top': '2%'}}>
+        A HEALTHFUL É UMA PLATAFORMA DE ARTIGOS VOLTADO AO 
+        </HomeTexto>
+
+        <HomeTexto>
+        SETOR DA SAÚDE, COM O FOCO EM MELHORIA DE VIDA. 
+        </HomeTexto>
+
+        <HomeTexto>
+        ACESSE ABAIXO PARA LER NOSSOS ARTIGOS OU  <CrieArtigo> ‎ Crie Um Artigo</CrieArtigo>
+        </HomeTexto>
+
+        <CardsCategoria>
+
+          <CardComp />
               
               <ImagemCategoria src={Bike} /> 
               <ImagemCategoria src={Caminhar} />
               <ImagemCategoria src={Abdomen} />
               <ImagemCategoria src={Medico} />
-              <ImagemCategoria src={Comidinhas} /> 
-              
-            </TextoCartão>
+              <ImagemCategoria src={Comidas} /> 
 
-            <TituloCartão>
-              CRIE OU LEIE ARTIGOS
-            </TituloCartão>
+          </CardsCategoria> 
 
-            <Artigos>
+        <HomeTitulo style={{'margin-top': '10%', 'font-size': '500%'}}>
+          Crie Ou Leie Artigos
+        </HomeTitulo>
+         
 
-                <TextoArtigos>
-                  OS ARTIGOS SERÃO SEPARADOS POR 
-                  <br/>
-                  CATEGORIAS. DESSE MODO FICA MAIS 
-                  <br/>
-                  FÁCIL DE ACHO-LÓS ATRAVÉS DA ABA DE 
-                  <br/>
-                  CATEGORIAS.
-                  <br/>
-                  <ImagemArtigo src={Escrever} />
-                </TextoArtigos>
+        <SecaoArtigo>
+          <HomeTexto>
+          <ImagemArtigo src={Escrita} />
+          <Separador />
+            OS ARTIGOS SÃO SEPARADOS POR <br />
+            CATEGORIAS, FACILITANDO SUA <br /> ORGANIZAÇÃO
+            E CARACTERIZAÇÃO.
+       
+          </HomeTexto>
+        </SecaoArtigo>
 
-                <TextoArtigos>
-                  VOCÊ TAMBÉM PODE SALVAR 
-                  <br/>
-                  ARTIGOS E DAR SUA 
-                  <br/>
-                  OPINIÃO NUM ARTIGO.
-                  <br/>
-                  <ImagemArtigo src={Artigo} />
-                </TextoArtigos>
 
-                <TextoArtigos>
-                  SOMENTE PROFISSIONAIS DA SAÚDE PODEM
-                  <br/>
-                  ESCREVER E PUBLICAR ARTIGOS, COM ISSO
-                  <br/>
-                  PODEMOS GARANTIR A QUALIDADE E A VALIDEZ 
-                  <br/>
-                  DOS NOSSOS ARTIGOS.
-                  <br/>
-                  <ImagemArtigo src={Perfil} />
-                </TextoArtigos>
+        <SecaoArtigo>
+          <HomeTexto style={{'display' : 'flex', 'align-itens': 'center', 'justify-content': 'center'}}>
 
-                <TextoArtigos>
-                  PARA CRIAR UM ARTIGO VOCÊ DEVE TER UMA 
-                  <br/> 
-                  CONTA NO NOSSO SITE E DEFINIR O SETOR DA 
-                  <br/> 
-                  SAÚDE ONDE ATUA ALÉM DE COMPROVAR O 
-                  <br/> 
-                  CERTIFICADO PARA QUE TENHAMOS UMA VALIDEZ E UMA 
-                  <br/> 
-                  SEGURANÇA DOS ARTIGOS EM 
-                  <br/> 
-                  NOSSO SITE.
-                  <br/>
-                  <ImagemArtigo src={Certificado}></ImagemArtigo>
-                </TextoArtigos>
+            VOCÊ TAMBÉM PODE SALVAR 
+            <br/>
+            ARTIGOS E COMENTAR SUA 
+            <br/>
+            OPINIÃO EM UM ARTIGO!
+            <br/>
 
-            </Artigos>
+            <Separador />
+            <ImagemArtigo src={Salvos} />
+          </HomeTexto>
+        </SecaoArtigo>
 
-          </Cartão>
-                    
+
+        <SecaoArtigo>
+          <HomeTexto>
+          <ImagemArtigo src={Perfil} style={{width : '35% ', height : 'auto'}} />
+          <Separador />
+         
+            QUALQUER UM PODE ESCREVER ARTIGOS,
+            <br/>
+            PORÉM, SERÃO AVALIADOS POR NOSSA EQUIPE
+            <br/>
+            A FIM DE GARANTIR A QUALIDADE E A VALIDEZ 
+            <br/>
+            DOS NOSSOS ARTIGOS.
+            <br/>
+            
+          </HomeTexto>
+      </SecaoArtigo>
+          
+      <SecaoArtigo>
+          <HomeTexto>
+            PARA CRIAR UM ARTIGO, É NECESSÁRIO TER UMA 
+            <br/> 
+            CONTA NO SITE E DEFINIR O SETOR DA 
+            <br/> 
+            SAÚDE QUE DIZ RESPEITO AO ARTIGO.
+            <br/> 
+            DEPOIS, SÓ ESCREVER!
+   
+            <Separador />
+            <ImagemArtigo src={Certificado}></ImagemArtigo>
+            
+          </HomeTexto>
+        </SecaoArtigo>
+       
+        
         <Footer />
       </Container>
     </>
