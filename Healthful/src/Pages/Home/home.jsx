@@ -2,6 +2,7 @@ import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { Container, BannerTexto, Banner, ImagemCategoria, ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, SecaoBanner, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador } from "./style.jsx";
 import Logo from "../../Assets/logo.svg";
+import leite from "../../Assets/Placeholder/comidas.svg"
 
 /*PlaceHolder*/
 import Bike from "../../Assets/Placeholder/Bike.svg";
@@ -66,7 +67,7 @@ export function Home () {
 
         <CardsCategoria>
 
-          <CardComp />
+          <CardComp background={leite} />
               
               <ImagemCategoria src={Bike} /> 
               <ImagemCategoria src={Caminhar} />

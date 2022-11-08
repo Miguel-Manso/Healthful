@@ -20,22 +20,9 @@ export const Card = styled.div`
     :hover .img{width: 430px; opacity: 1} /* IMG */
     :hover .content {height: 260px; padding: 20px; opacity: 1; transform: translateY(0);} /* Content */
     :hover .seta {transform: rotate(0);} /* Seta */
-    .img{
-
-    width: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background-image: url(${leite});
-    background-size: cover;
-    background-position: center;
-    transition: all .5s;
-    z-index: 2;
-    position: relative;
-    opacity: .8;
-
-    :hover .titulo{font-size: 28px;} /* Image Span */
+  
+    
+ 
 
     .titulo{
     text-transform: uppercase;
@@ -46,7 +33,6 @@ export const Card = styled.div`
     color: green;
     
 
-}
 
     
 }
@@ -86,5 +72,21 @@ export const Card = styled.div`
 
 
 
+
+`
+
+export const CardImage = styled.div`
+width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: ${props => `url(${props.background})`};
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
 
 `
