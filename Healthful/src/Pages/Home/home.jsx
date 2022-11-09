@@ -1,14 +1,12 @@
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
-import { Container, BannerTexto, Banner, ImagemCategoria, ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, SecaoBanner, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador } from "./style.jsx";
+import { Container, BannerTexto, Banner, ImagemCategoria, ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, SecaoBanner, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
 import Logo from "../../Assets/logo.svg";
-import leite from "../../Assets/Placeholder/comidas.svg"
 
 /*PlaceHolder*/
 import Bike from "../../Assets/Placeholder/Bike.svg";
 import Caminhar from "../../Assets/Placeholder/Caminhar.svg";
 import Abdomen from "../../Assets/Placeholder/Abdomen.svg";
-import Medico from "../../Assets/Placeholder/Medico.svg";
 import Comidas from "../../Assets/Placeholder/Comidas.svg";
 
 import Escrita from "../../Assets/HomeImg/escritas.svg";
@@ -67,15 +65,16 @@ export function Home () {
 
         <CardsCategoria>
 
-          <CardComp background={leite} />
-              
-              <ImagemCategoria src={Bike} /> 
-              <ImagemCategoria src={Caminhar} />
-              <ImagemCategoria src={Abdomen} />
-              <ImagemCategoria src={Medico} />
-              <ImagemCategoria src={Comidas} /> 
+          <CardComp background={Bike} titulo="Ciclismo" subtitulo="Quais os benefícios de andar de Bike?" texto="É importante porquê..."/>
+          <SeparadorCard  />
+          <CardComp background={Comidas} titulo="Alimentação" subtitulo="Importância da sua alimentação" texto="É importante porquê..."/>
+          <SeparadorCard/>
+          <CardComp background={Abdomen} titulo="Treinos" subtitulo="Treinamentos importantes!" texto="É importante porquê..."/>
+          <SeparadorCard />
+          <CardComp background={Caminhar} titulo="Caminhadas" subtitulo="Importância da caminhada" texto="É importante porquê..."/>
 
-          </CardsCategoria> 
+              
+        </CardsCategoria> 
 
         <HomeTitulo style={{'margin-top': '10%', 'font-size': '500%'}}>
           Crie Ou Leie Artigos

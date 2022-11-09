@@ -115,16 +115,26 @@ export const SecaoArtigo = styled.div`
   display: flex;
 `
 
+export const SeparadorCard = styled.span`
+  margin-left: 3px;
+  margin-right: 3px;
+`
+
 export const Separador = styled.span`
   margin-left: 50px;
   margin-right: 50px;
 `
 
 export const CardsCategoria = styled.div`
+  padding: 2%;
+  margin-top: 7%;
   display: flex;
+  flex-direction: row;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  margin: 2%;
+  justify-content: space-around;
+  display: flex;
+ position: relative;
 
 `
 

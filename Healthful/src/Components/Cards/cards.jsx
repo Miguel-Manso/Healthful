@@ -1,21 +1,20 @@
-import { Card, CardImage} from "./style.jsx";
-import leite from "../../Assets/Placeholder/comidas.svg"
+import { Card, CardContent, CardImage, CardSeta} from "./style.jsx";
 
-export const CardComp = () => {
+export const CardComp = ({background, titulo, subtitulo, texto}) => {
     return (
         <Card>
-        <CardImage background={leite}>
-            <span className="titulo">Comidas Saudáveis</span>
+        <CardImage background={background}>
+            <span>{titulo}</span>
         </CardImage>
             
-        <div className="content">
-            <span className="subtitulo">Importância de Comer Bem!</span>
-            <p className="descricao">Comidas saudáveis são importantes porque...</p>
-        </div>
+        <CardContent>
+            <span>{subtitulo}</span>
+            <p>{texto}</p>
+        </CardContent>
 
-        <div className="seta">
-            <span className="sseta">&#8673;</span>
-        </div>
+        <CardSeta>
+            <span>&#8673;</span>
+        </CardSeta>
 
         </Card>
     );
