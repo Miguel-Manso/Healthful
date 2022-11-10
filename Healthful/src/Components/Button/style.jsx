@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ButtonCompGreen = styled.button`
+export const ButtonCompGreen = styled.button`
     background-color:#14bc04;
     text-transform: uppercase;
     letter-spacing: 0.2 rem;
@@ -19,7 +19,7 @@ const ButtonCompGreen = styled.button`
     }
 `
 
-const ButtonCompWhite = styled.button`
+export const ButtonCompWhite = styled.button`
     color: #14bc04;
     background-color:#ffffff;
     border: 1px #212121 ;
@@ -38,7 +38,7 @@ const ButtonCompWhite = styled.button`
     transition-duration: 0.4s
     }
 `
-const ButtonCompDelete = styled.button`
+export const ButtonCompDelete = styled.button`
     color: #ffffff;
     background-color:#af2727;
     border: 1px #212121 ;
@@ -57,7 +57,7 @@ const ButtonCompDelete = styled.button`
     transition-duration: 0.4s
     }
 `
-const ButtonCompAlter = styled.button`
+export const ButtonCompAlter = styled.button`
     color: #ffffff;
     background-color:#2DABD3;
     border: 1px #212121 ;
@@ -77,4 +77,28 @@ const ButtonCompAlter = styled.button`
     }
 
 `
-export {ButtonCompWhite, ButtonCompGreen, ButtonCompAlter, ButtonCompDelete}
+
+export const ButtonCompCategoria = styled.button`
+    display: inline-block;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 1.125rem;
+    padding: 3px 20px;
+    text-transform: uppercase;
+    font-family: 'Alata', sans-serif;
+    background-color: rgb(23, 225, 0);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    a { color: inherit; } 
+    text-decoration: none;
+    color: white;
+    
+    &:hover{
+    background-color: rgba(20, 180, 2, 0.984);
+    color: white;
+    transition-duration: 0.4s
+    }
+`

@@ -14,6 +14,7 @@ import Salvos from "../../Assets/HomeImg/artigos_salvos.svg";
 import Perfil from "../../Assets/HomeImg/perfil.svg";
 import Certificado from "../../Assets/HomeImg/certificados.svg";
 import { CardComp } from "../../Components/Cards/cards.jsx";
+import Button from "../../Components/Button/button.jsx";
 
 
 export function Home () {
@@ -21,8 +22,8 @@ export function Home () {
     <>
       <Container>
         <Navbar />
-            
-          <SecaoBanner>
+          
+          <SecaoBanner> 
             <Banner>
               <BannerTexto>
                 “Que desgraça é para o

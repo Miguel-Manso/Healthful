@@ -1,4 +1,4 @@
-import { ButtonCompAlter, ButtonCompGreen, ButtonCompDelete, ButtonCompWhite } from "./style.jsx";
+import { ButtonCompAlter, ButtonCompGreen, ButtonCompDelete, ButtonCompWhite, ButtonCompCategoria } from "./style.jsx";
 
 export default function Button({onClick, conteudo, estilo}) { 
         if (estilo == 1){
@@ -14,6 +14,10 @@ export default function Button({onClick, conteudo, estilo}) {
             return(
                 <ButtonCompDelete onClick={onClick}>{conteudo}</ButtonCompDelete>
             )
+        
+        } else if (estilo == 4){
+            return(
+                <ButtonCompCategoria onClick={onClick}>{conteudo}</ButtonCompCategoria>)
 
         }else {
             return(
