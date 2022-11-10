@@ -1,4 +1,4 @@
-import { Comentario } from "../Models/comentarioModel"
+import { Comentario } from "../Models/comentarioModel.js"
 
 export class ComentarioController{
     static async selectComentario (req, res){

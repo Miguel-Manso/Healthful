@@ -1,4 +1,4 @@
-import { Postagem } from "../Models/postagemModel"
+import { Postagem } from "../Models/postagemModel.js"
 
 export class PostagemController{
     static async selectPostagem (req, res){

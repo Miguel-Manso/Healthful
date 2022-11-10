@@ -1,4 +1,4 @@
-import { Categoria } from "../Models/categoriaModel"
+import { Categoria } from "../Models/categoriaModel.js"
 
 export class categoriaController{
     static async selectCategoria (req, res){
