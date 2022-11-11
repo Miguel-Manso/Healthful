@@ -1,7 +1,9 @@
-import { Hamburger, MenuLink, Menu, Nav, ImagemNav, } from "./style.jsx";
+import { Hamburger, MenuLink, Menu, Nav, ImagemNav, ImagemNavProfile, } from "./style.jsx";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/logo.svg"
+import logo from "../../Assets/logo_small.svg"
+import profile from "../../Assets/Usuário.svg"
 import { useState } from "react";
+import { ButtonCompAlter } from "../Button/style.jsx";
 
 
 
@@ -16,7 +18,14 @@ export function Navbar () {
             </ImagemNav>
             </Link>
 
-            <Hamburger onClick={() => SetAberto(!Aberto)}>
+
+            <ImagemNavProfile
+            src={profile}>    
+            </ImagemNavProfile>
+
+           
+
+            { /*<Hamburger onClick={() => SetAberto(!Aberto)}>
             <span />
             <span />
             <span />
@@ -25,7 +34,7 @@ export function Navbar () {
                 <MenuLink><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link></MenuLink>
                 <MenuLink><Link to="/cadastro" style={{ textDecoration: 'none' }}>Cadastro</Link></MenuLink>
                 
-            </Menu>
+            </Menu>*/ }
         </Nav>
     ) 
 }

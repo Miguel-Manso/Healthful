@@ -35,9 +35,9 @@ const Menu = styled.div`
 `;
 
 const Nav = styled.div`
-  padding: 0 2rem;
+  padding: 1.5rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   background: white;
@@ -49,7 +49,11 @@ const Nav = styled.div`
 `;
 const ImagemNav = styled.img`
     width:auto, fit-content;
-    height: 5rem;
+    height: 4.5rem;
+`
+const ImagemNavProfile = styled.img`
+    width:auto, fit-content;
+    height: 2.6rem;
 `
 
 
@@ -70,4 +74,4 @@ const Hamburger = styled.div`
 `;
 
 
-export {Nav, Hamburger, Menu, MenuLink, ImagemNav}
+export {Nav, Hamburger, Menu, MenuLink, ImagemNav, ImagemNavProfile}
