@@ -68,14 +68,14 @@ export const LogoHealthful = styled.div`
 `
 
 export const HomeTitulo = styled.div`
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Alata', sans-serif;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-weight: 900;
+  font-weight: bold;
   margin-top: 8%;
-  font-size: 570%;
+  font-size: 4rem;
   text-transform: uppercase;
 `
 export const HomeTexto = styled.div`
@@ -83,9 +83,10 @@ export const HomeTexto = styled.div`
   font-family: 'Alata', sans-serif;
   display: flex;
   text-align: justify;
+  align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 150%;
+  font-size: 1.5rem;
 
  
 `
@@ -106,7 +107,7 @@ export const CrieArtigo = styled.div`
 `
 
 export const SecaoArtigo = styled.div`
-  margin: 10%;
+  margin: 5%;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -121,8 +122,8 @@ export const SeparadorCard = styled.span`
 `
 
 export const Separador = styled.span`
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 35px;
+  margin-right: 35px;
 `
 
 export const CardsCategoria = styled.div`
@@ -138,11 +139,6 @@ export const CardsCategoria = styled.div`
 
 `
 
-export const ImagemCategoria = styled.img`
-  height: 10rem;
-  margin: 0.3rem;
-`;
-
 export const TextoArtigos = styled.p`
   width: 50%;
   margin: 2.5rem;
@@ -151,11 +147,12 @@ export const TextoArtigos = styled.p`
   font-size: 1.1rem;
   font-weight: lighter;
   flex-direction: row;
+
   
 `;
 
 export const ImagemArtigo = styled.img`
- width: 50%;
+ width: 35%;
  height: auto;
 `;
 

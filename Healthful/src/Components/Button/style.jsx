@@ -79,7 +79,8 @@ export const ButtonCompAlter = styled.button`
 `
 
 export const ButtonCompCategoria = styled.button`
-    display: inline-block;
+    margin-right: 1%;
+    margin-top: 1%;
     text-align: center;
     white-space: normal;
     word-wrap: break-word;

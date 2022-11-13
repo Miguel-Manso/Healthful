@@ -37,7 +37,6 @@ const Menu = styled.div`
 const Nav = styled.div`
   padding: 1.5rem 2rem;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   background: white;
@@ -48,11 +47,9 @@ const Nav = styled.div`
   z-index: 9999;
 `;
 const ImagemNav = styled.img`
-    width:auto, fit-content;
     height: 4.5rem;
 `
 const ImagemNavProfile = styled.img`
-    width:auto, fit-content;
     height: 2.6rem;
 `
 

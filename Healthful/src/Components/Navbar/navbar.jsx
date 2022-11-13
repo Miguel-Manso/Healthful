@@ -17,24 +17,26 @@ export function Navbar () {
             src={logo}>
             </ImagemNav>
             </Link>
+           
 
+            <Hamburger onClick={() => SetAberto(!Aberto)}>
+            <span />
+            <span />
+            <span />
 
+            </Hamburger>
+
+            <Menu Aberto={Aberto}>
+                <MenuLink><Link to="/artigos" style={{ textDecoration: 'none' }}>Artigos</Link></MenuLink>
+                <MenuLink><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link></MenuLink>
+                <MenuLink><Link to="/cadastro" style={{ textDecoration: 'none' }}>Cadastro</Link></MenuLink>   
             <ImagemNavProfile
             src={profile}>    
             </ImagemNavProfile>
+            </Menu>
 
-           
+       
 
-            { /*<Hamburger onClick={() => SetAberto(!Aberto)}>
-            <span />
-            <span />
-            <span />
-            </Hamburger>
-            <Menu Aberto={Aberto}>
-                <MenuLink><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link></MenuLink>
-                <MenuLink><Link to="/cadastro" style={{ textDecoration: 'none' }}>Cadastro</Link></MenuLink>
-                
-            </Menu>*/ }
         </Nav>
     ) 
 }
