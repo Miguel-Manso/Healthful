@@ -79,7 +79,8 @@ export const ButtonCompAlter = styled.button`
 `
 
 export const ButtonCompCategoria = styled.button`
-    display: inline-block;
+    margin-right: 1%;
+    margin-top: 1%;
     text-align: center;
     white-space: normal;
     word-wrap: break-word;
@@ -99,6 +100,37 @@ export const ButtonCompCategoria = styled.button`
     &:hover{
     background-color: rgba(20, 180, 2, 0.984);
     color: white;
+    transition-duration: 0.4s
+    }
+`
+
+
+export const ButtonUser = styled.button`
+    margin: 1%;
+    margin-left: 0;
+    background-color: white;
+    position: relative;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 1.125rem;
+    padding: 3px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    font-weight: bold;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    a { color: inherit; } 
+    text-decoration: none;
+
+
+    &:hover{
+    background-color: #dbdbdb; /* Green */
+    color: #14bc04;
     transition-duration: 0.4s
     }
 `

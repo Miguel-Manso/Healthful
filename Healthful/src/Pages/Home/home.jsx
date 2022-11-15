@@ -1,6 +1,8 @@
+import { useState } from "react";
+
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
-import { Container, BannerTexto, Banner, ImagemCategoria, ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, SecaoBanner, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
+import { Container, BannerTexto, Banner, ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, SecaoBanner, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
 import Logo from "../../Assets/logo.svg";
 
 /*PlaceHolder*/
@@ -18,6 +20,8 @@ import Button from "../../Components/Button/button.jsx";
 
 
 export function Home () {
+  const [value, setValue] = useState("")
+  
   return (
     <>
       <Container>
@@ -77,7 +81,7 @@ export function Home () {
               
         </CardsCategoria> 
 
-        <HomeTitulo style={{'margin-top': '10%', 'font-size': '500%'}}>
+        <HomeTitulo style={{'margin-top': '10%', 'font-size': '3.5rem'}}>
           Crie Ou Leie Artigos
         </HomeTitulo>
          
@@ -95,7 +99,7 @@ export function Home () {
 
 
         <SecaoArtigo>
-          <HomeTexto style={{'display' : 'flex', 'align-itens': 'center', 'justify-content': 'center'}}>
+          <HomeTexto>
 
             VOCÊ TAMBÉM PODE SALVAR 
             <br/>
@@ -112,7 +116,7 @@ export function Home () {
 
         <SecaoArtigo>
           <HomeTexto>
-          <ImagemArtigo src={Perfil} style={{width : '35% ', height : 'auto'}} />
+          <ImagemArtigo src={Perfil} style={{width : '25% ', height : 'auto'}} />
           <Separador />
          
             QUALQUER UM PODE ESCREVER ARTIGOS,

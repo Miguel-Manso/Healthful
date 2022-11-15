@@ -32,6 +32,23 @@ const IconInstagram = styled.div `
     }
 `;
 
+export const IconUser = styled.div`
+    height: 7rem;
+    width: 7rem;
+    background: linear-gradient(0deg, rgba(15,123,5,1) 0%, rgba(25,241,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    color: white;
+    cursor: pointer;
+    svg {
+        width: 6rem;
+        height: auto;
+    }
+
+`
+
 const IconTwitter = styled.div `
     height: 3.5rem;
     width: 3.5rem;

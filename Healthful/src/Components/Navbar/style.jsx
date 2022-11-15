@@ -38,7 +38,12 @@ const Menu = styled.div`
 
 const Nav = styled.div`
   display: flex;
+<<<<<<< HEAD
   width: 100%;
+=======
+  align-items: center;
+  flex-wrap: wrap;
+>>>>>>> 69fe798166c3b9603d3f920626bf42fb624c6bef
   background: white;
   position: top;
   border: 1px solid;
@@ -46,6 +51,7 @@ const Nav = styled.div`
   box-shadow: 0.1px 1px #888888; 
 `;
 const ImagemNav = styled.img`
+<<<<<<< HEAD
     height: 50px;
     width:auto;
     align-items:left;
@@ -53,6 +59,11 @@ const ImagemNav = styled.img`
 `
 const Imagemlogin = styled.img`
     width:auto, fit-content;
+=======
+    height: 4.5rem;
+`
+const ImagemNavProfile = styled.img`
+>>>>>>> 69fe798166c3b9603d3f920626bf42fb624c6bef
     height: 2.6rem;
 `
 

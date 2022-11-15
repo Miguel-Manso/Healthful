@@ -14,6 +14,9 @@ export const CardContent = styled.div`
 
 export const CardImage = styled.div`
     width: 360px;
+    border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +39,6 @@ export const CardSeta = styled.div`
 
 export const Card = styled.div`
     color: white;
-    border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
     width: 360px;

@@ -15,7 +15,11 @@
     "draft-js": "^0.11.7",
     "draftjs-to-html": "^0.9.1",
     "express": "^4.18.1",
+<<<<<<< HEAD
     "jodit-react": "^1.3.24",
+=======
+    "jodit-react": "^1.3.25",
+>>>>>>> 69fe798166c3b9603d3f920626bf42fb624c6bef
     "mssql": "^9.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
