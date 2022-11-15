@@ -12,11 +12,8 @@ export function Footer(){
         <FooterList>
           <FooterSpan> Contato </FooterSpan>
           <FooterSpan> Link </FooterSpan>
-          <FooterSpan> Categorias </FooterSpan>
         </FooterList>
         <FooterList>
-          <FooterSpan> Quem Somos? </FooterSpan>
-          <FooterSpan> Suporte </FooterSpan>
           <FooterSpan> Redes Sociais </FooterSpan>
         </FooterList>
          

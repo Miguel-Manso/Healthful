@@ -24,5 +24,6 @@ export default function Button({onClick, conteudo, estilo}) {
                 <ButtonCompAlter onClick={onClick}>{conteudo}</ButtonCompAlter>)
 
          }
+         
        
     }

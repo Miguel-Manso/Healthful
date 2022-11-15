@@ -5,8 +5,8 @@ const FooterDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 20%;
+  width: 100vw;
+  height: 18%;
   background-color: #000;
   color: #fff;
   padding: 1.5rem 2rem;
@@ -15,6 +15,7 @@ const FooterDiv = styled.div`
   list-style-type: none;
   overflow: hidden;
   margin: none;
+  margin-top: 20%;
 
 `;
 

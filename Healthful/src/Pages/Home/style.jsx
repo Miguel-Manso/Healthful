@@ -127,14 +127,15 @@ export const Separador = styled.span`
 
 export const CardsCategoria = styled.div`
   padding: 2%;
-  margin-top: 7%;
+  height: 51%;
   display: flex;
+  margin-top: 7%;
   flex-direction: row;
-  text-align: center;
+  ext-align: center;
   align-items: center;
   justify-content: space-around;
-  display: flex;
- position: relative;
+
+
 
 `
 
