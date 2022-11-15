@@ -7,22 +7,13 @@ position: absolute;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-<<<<<<< HEAD
-  height: 18%;
-=======
   height: 20%;
->>>>>>> 69fe798166c3b9603d3f920626bf42fb624c6bef
   background-color: #000;
   color: #fff;
   padding: 1.5rem 2rem;
   text-align: center;
   list-style-type: none;
   overflow: hidden;
-<<<<<<< HEAD
-  margin: none;
-  margin-top: 20%;
-=======
->>>>>>> 69fe798166c3b9603d3f920626bf42fb624c6bef
 
 `;
 

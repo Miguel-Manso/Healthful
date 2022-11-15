@@ -70,7 +70,7 @@ export function Home () {
 
         <CardsCategoria>
 
-          <CardComp background={Bike} titulo="Ciclismo" subtitulo="Quais os benefícios de andar de Bike?" texto="É importante porquê ..."/>
+          <CardComp background={Bike} titulo="Ciclismo" subtitulo="Quais os benefícios de andar de Bike?" texto="É importante porquê..."/>
           <SeparadorCard  />
           <CardComp background={Comidas} titulo="Alimentação" subtitulo="Importância da sua alimentação" texto="É importante porquê..."/>
           <SeparadorCard/>

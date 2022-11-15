@@ -1,4 +1,4 @@
-import { Hamburger, MenuLink, Menu, Nav, ImagemNav, Imagemlogin } from "./style.jsx";
+import { Hamburger, MenuLink, Menu, Nav, ImagemNav, ImagemNavProfile, } from "./style.jsx";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo_small.svg"
 import profile from "../../Assets/Usuário.svg"
@@ -24,9 +24,6 @@ export function Navbar () {
             <span />
             <span />
 
-<<<<<<< HEAD
-           
-=======
             </Hamburger>
 
             <Menu Aberto={Aberto}>
@@ -37,22 +34,9 @@ export function Navbar () {
             src={profile}>    
             </ImagemNavProfile>
             </Menu>
->>>>>>> 69fe798166c3b9603d3f920626bf42fb624c6bef
 
        
 
-<<<<<<< HEAD
-            <Hamburger onClick={() => SetAberto(!Aberto)}>
-            <span />
-            <span />
-            <span />
-            </Hamburger>
-            <Menu Aberto={Aberto}>
-                <MenuLink><Link to="/CriarArtigo" style={{ textDecoration: 'none' }}>Criar artigo</Link></MenuLink>
-                <MenuLink><Link  to="/login" ><Imagemlogin src={profile}></Imagemlogin></Link></MenuLink>
-            </Menu>
-=======
->>>>>>> 69fe798166c3b9603d3f920626bf42fb624c6bef
         </Nav>
     ) 
 }
