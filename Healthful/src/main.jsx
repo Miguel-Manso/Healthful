@@ -6,6 +6,7 @@ import GlobalStyle from './Styles/global.jsx'
 import { Login } from './Pages/Login/login.jsx';
 import { Cadastro } from './Pages/Cadastro/cadastro.jsx';
 import { Artigos } from './Pages/Artigos/artigos.jsx';
+import { Perfil } from './Pages/Perfil/perfil.jsx';
 
 
 
@@ -17,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-
+      <Route path="/perfil" element={ <Perfil />} />
         <Route path="/artigos" element={<Artigos />} />
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

@@ -2,19 +2,18 @@ import styled from "styled-components";
 
 
 const FooterDiv = styled.div`
+position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 20%;
   background-color: #000;
   color: #fff;
   padding: 1.5rem 2rem;
   text-align: center;
-  bottom: 0;
   list-style-type: none;
   overflow: hidden;
-  margin: none;
 
 `;
 
