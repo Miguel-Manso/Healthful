@@ -1,4 +1,8 @@
 <div align="center">
+  
+<h6>
+  Documentação no README feita por Victor Bellini
+</h6>
 
 # ⚡ Projeto | Healthful ⚡
 
@@ -26,15 +30,18 @@
 </h4>
 
 <h4>A parte do nosso Front-End começou no mês de Setembro, dando continuidade até o presente momento.</h4>
+  
+<h6>A criação do Front, está sendo realizada por TODOS os integrantes do grupo.</h6>
 
 <div align="left">
 
 ## 🧱 Desenvolvimento
-- [ ] Tela de Login
-- [ ] Tela de Cadastro
-- [ ] Home
-- [ ] Criação de Artigos
-- [ ] Artigos
+- [ ] Tela de Login ✔️
+- [ ] Tela de Cadastro ✔️
+- [ ] Home 🚧
+- [ ] Criação de Artigos 🚧
+- [ ] Artigos 🚧
+- [ ] Tela de Usuário 🚧
 
 ---
 ## 📦 Linguagem e Extensões
@@ -45,9 +52,9 @@
 ---
 ## 👾 Requisitos
 
-- [ ] Criação do Front-End com React.js <br/>
-- [ ] Estrutura MVC <br/>
-- [ ] Extensão Vite.js <br/>
+- [ ] Criação do Front-End com React.js ✔️ <br/> 
+- [ ] Estrutura MVC ✔️ <br/>
+- [ ] Extensão Vite.js ✔️ <br/>
 
 </div>
 
@@ -62,14 +69,15 @@
 
 <h4>O nosso CRUD deu inicio em 08/09/2022, para ser utilizado no Back-End do nosso projeto, com o objetivo de ter as 4 principais funções. <br>
 ( Get, Insert, Update e Delete )</h4>
+<h6>O CRUD juntamente com o Back-End, foi feita pelos integrantes Pedro Augusto e Miguel Manso.</h6>
 
 <div align="left">
 
 ## 👾 Funcionalidades
 
-- [ ] Criação do Servidor em Node.js <br/>
-- [ ] Estrutura MVC <br/>
-- [ ] Conexão do banco de dados Sql Server <br/>
+- [ ] Criação do Servidor em Node.js ✔️ <br/>
+- [ ] Estrutura MVC ✔️ <br/>
+- [ ] Conexão do banco de dados Sql Server ✔️ <br/>
 
 ---
 ## ⚙ Ferramentas Utilizadas
