@@ -4,13 +4,20 @@ import logo from "../../Assets/logo_small.svg"
 import profile from "../../Assets/Usuário.svg"
 import { useState } from "react";
 import { Jacoba } from "../Dropdown/dropdown.jsx";
-import { ButtonCompAlter } from "../Button/style.jsx";
+import Icon from "../../Components/IconComp/icon.jsx"
+import { AiOutlineUser } from 'react-icons/ai'
+
 
 
 
 export function Navbar () {
+    const ProfileImg = {
+        'img': <Icon estilo="2" conteudo={<AiOutlineUser /> }/>
+
+    }
+
     const [Aberto, SetAberto] = useState(false)
-    const [selected, setSelected] = useState("Categoria")
+    const [selected, setSelected] = useState(ProfileImg.img)
     return (
         <Nav>
 
