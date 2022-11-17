@@ -14,7 +14,13 @@ export default function Icon({estilo, conteudo, onClick}) {
         return(
             <IconUser onClick={onClick}>{conteudo}</IconUser>)
 
-     } else {
+     }
+     else if (estilo == 4){
+        return(
+            <IconDrop onClick={onClick}>{conteudo}</IconDrop>)
+
+     }    
+     else {
         return(
             <IconTwitter onClick={onClick}>{conteudo}</IconTwitter>)
 

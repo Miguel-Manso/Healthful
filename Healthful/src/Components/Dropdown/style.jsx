@@ -1,7 +1,10 @@
 import styled from "styled-components";
+import user from "../../Assets/Usuário.svg";
 
 export const Container = styled.div`
-height: 100vh;
+
+    height: 100vh;
+    
 
 `;
 export const Dropdownbtn = styled.div`
@@ -19,8 +22,6 @@ export const Dropdownitem = styled.div`
 
 
 export const Dropdown = styled.div`
-
-
 
     width: auto;
     margin: auto;
@@ -58,7 +59,7 @@ export const Dropdown = styled.div`
         border-radius: 1rem;
         text-align: center;
         overflow: auto;
-        :hover {background: #00FF00;}
+        :hover {background: #147014;}
 
     }
 }
