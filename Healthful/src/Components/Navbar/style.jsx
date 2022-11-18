@@ -17,6 +17,9 @@ const MenuLink = styled.a`
     color: #0b8700;
   }
 `;
+const MenuNav = styled.div`
+
+`;
 
 const Menu = styled.div`
   display: flex;
@@ -71,4 +74,4 @@ const Hamburger = styled.div`
 `;
 
 
-export {Nav, Hamburger, Menu, MenuLink, ImagemNav, ImagemNavProfile}
+export {Nav, Hamburger, Menu, MenuLink, ImagemNav, ImagemNavProfile, MenuNav}

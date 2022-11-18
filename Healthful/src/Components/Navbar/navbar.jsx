@@ -1,18 +1,18 @@
-import { Hamburger, MenuLink, Menu, Nav, ImagemNav, ImagemNavProfile, } from "./style.jsx";
+import { Hamburger, MenuLink, Menu, Nav, ImagemNav, ImagemNavProfile, MenuNav } from "./style.jsx";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo_small.svg"
 import profile from "../../Assets/Usuário.svg"
 import { useState } from "react";
-import { Jacoba } from "../Dropdown/dropdown.jsx";
 import Icon from "../../Components/IconComp/icon.jsx"
-import { AiOutlineUser } from 'react-icons/ai'
+import { FiUser } from 'react-icons/Fi'
+import { NavDrop } from "../Nav Dropdown/dropdown.jsx";
 
 
 
 
 export function Navbar () {
     const ProfileImg = {
-        'img': <Icon estilo="2" conteudo={<AiOutlineUser /> }/>
+        'img': <Icon estilo="4" conteudo={<FiUser /> }/>
 
     }
 
@@ -37,14 +37,13 @@ export function Navbar () {
 
             <Menu Aberto={Aberto}>
                 <MenuLink><Link to="/artigos" style={{ textDecoration: 'none' }}>Artigos</Link></MenuLink>
-                <MenuLink><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link></MenuLink>
-                <MenuLink><Link to="/cadastro" style={{ textDecoration: 'none' }}>Cadastro</Link></MenuLink>   
-                <Jacoba selected={selected} setSelected={setSelected}/>
-            <ImagemNavProfile
-            src={profile}>    
-            </ImagemNavProfile>
+                <MenuLink><Link to="/criarartigo" style={{ textDecoration: 'none' }}>Crie Artigos</Link></MenuLink>
+                <MenuLink><Link to="/" style={{ textDecoration: 'none' }}>Pesquisar</Link></MenuLink>   
+              
             </Menu>
-
+            <MenuNav>
+                <NavDrop selected={selected} />
+            </MenuNav>
        
 
         </Nav>

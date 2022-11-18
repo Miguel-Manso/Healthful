@@ -1,4 +1,4 @@
-import { IconFacebook, IconInstagram, IconTwitter, IconUser} from "./styled.jsx";
+import { IconFacebook, IconInstagram, IconTwitter, IconUser, IconDrop} from "./styled.jsx";
 
 export default function Icon({estilo, conteudo, onClick}) {
     if (estilo == 1){
