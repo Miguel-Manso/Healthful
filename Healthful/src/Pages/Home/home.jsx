@@ -27,7 +27,7 @@ export function Home () {
       <Container>
         <Navbar />
           
-          {/* Calma que o Banner tá vindo, só preciso arrumar umas coisas aqui */}
+          {/* Banner novo aqui */}
 
           
           <Apresentacao>

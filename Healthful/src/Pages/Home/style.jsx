@@ -13,39 +13,6 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const SecaoBanner = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 88%;
-  min-height: 88%;
-  background-image: url(${BannerIMG});
-  background-size: cover;
-  box-shadow: 0px 4px 4px 2px rgba(0,0,0,0.1);
-  margin-left: 6%;
-`;
-
-export const Banner = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 10%;
-  text-align: center;
-  & span {
-    margin: 3%;
-    font-size: 23px;
-    color: white;
-  }
-`;
-
-
-export const BannerTexto = styled.p`
-  font-size: 45px;        
-  color: white;
-  justify-content: center;
-  position: relative;
-`;
-
 export const Apresentacao = styled.div`
   display: flex;
   flex-direction: column;
