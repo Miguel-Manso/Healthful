@@ -27,20 +27,7 @@ export function Home () {
       <Container>
         <Navbar />
           
-          <SecaoBanner> 
-            <Banner>
-              <BannerTexto>
-                “Que desgraça é para o
-                  <br />  
-                homem envelhecer sem
-                  <br /> 
-                nunca ver a beleza e a força
-                  <br /> 
-                do que o seu corpo é capaz”
-              </BannerTexto>
-              <span>Sócrates</span >
-            </Banner> 
-          </SecaoBanner>
+          {/* Calma que o que o Banner tá vindo, só preciso arrumar umas coisas aqui */}
 
           
           <Apresentacao>
