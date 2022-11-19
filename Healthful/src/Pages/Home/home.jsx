@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
-import { Container, BannerTexto, Banner, ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, SecaoBanner, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
+import { Container,  ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
 import Logo from "../../Assets/logo.svg";
 
 /*PlaceHolder*/

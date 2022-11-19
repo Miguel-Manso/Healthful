@@ -1,12 +1,13 @@
 /* Chamando os componentes */
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { Footer } from "../../Components/Footer/Footer.jsx";
-import { Cabecalho, Secao, Title, Container, Texto, Biography, Icons } from "./style.jsx";
+import { Cabecalho, Secao, Title, Container, Texto, Biography, Icons, SecaoLower } from "./style.jsx";
 
 import { AiOutlineShareAlt, AiOutlineUser } from "react-icons/ai"; /* Compartilhar */
 import { FaBell } from "react-icons/fa"; /* Sino */
 import Icon from "../../Components/IconComp/icon.jsx";
 import Button from "../../Components/Button/button.jsx";
+import { SearchBar } from "../../Components/SearchBar/searchbar.jsx";
 
 
 export function Perfil () {
@@ -15,9 +16,9 @@ export function Perfil () {
     <Navbar />
     <Container>
       <Cabecalho>
+
       <Secao>
       <Icon estilo="3" conteudo={<AiOutlineUser/>}></Icon>
-      
       </Secao>
 
       <Secao>
@@ -30,14 +31,15 @@ export function Perfil () {
       </Icons>
       </Secao>
 
-
-        <Button  estilo="5" conteudo="Meus Artigos" />
-        <Button estilo="5" conteudo="Artigos Salvos" />
+      <SecaoLower>
+        <Button estilo="5" conteudo="Meus Artigos" />
+        <Button  estilo="5" conteudo="Artigos Salvos" />
         <Button estilo="5" conteudo="Criar Artigo" />
 
-
-   
-        {/*Lupa Aqui*/}
+          <SearchBar />
+     
+        
+      </SecaoLower>
 
         </Cabecalho>
 

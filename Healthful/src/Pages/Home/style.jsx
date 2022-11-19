@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import BannerIMG from "../../Assets/HomeImg/banner.svg";
 
 export const Container = styled.div`
   display: block;

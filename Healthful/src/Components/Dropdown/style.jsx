@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import user from "../../Assets/Usuário.svg";
 
 export const Container = styled.div`
 

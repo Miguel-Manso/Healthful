@@ -3,7 +3,8 @@ import {Dropdownitem,Dropdown, Dropdownbtn, Dropdowncontent} from "./style"
 export function NavDrop({ selected, setSelected }) { 
     const [isActive, setIsActive] = useState(false); 
     const options = [<a href="/login" style={{textDecoration:'none'}} >Login</a>, 
-                     <a href="/cadastro" style={{textDecoration:'none'}} >Cadastre-se</a>]; 
+                     <a href="/cadastro" style={{textDecoration:'none'}} >Cadastre-se</a>,
+                     <a href="/perfil" style={{textDecoration:'none'}} >Perfil</a>]; 
     return (
     <Dropdown>
         <Dropdownbtn onClick={(e) => 

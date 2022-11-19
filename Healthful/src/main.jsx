@@ -8,6 +8,7 @@ import { Cadastro } from './Pages/Cadastro/cadastro.jsx';
 import { Artigos } from './Pages/Artigos/artigos.jsx';
 import { Perfil } from './Pages/Perfil/perfil.jsx';
 import { CriarArtigo } from './Pages/CriarArtigo/criarArtigo.jsx';
+import { Pesquisa } from './Pages/Pesquisa/pesquisa.jsx';
 
 
 
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/pesquisar" element={<Pesquisa />} />
 
       </Routes>
     </Router>

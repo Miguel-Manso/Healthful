@@ -109,9 +109,9 @@ export const ButtonUser = styled.button`
     margin: 1%;
     margin-left: 0;
     background-color: white;
-    position: relative;
     font-family: 'Alata', sans-serif;
     text-align: center;
+    position: relative;
     white-space: normal;
     word-wrap: break-word;
     font-size: 1.125rem;
