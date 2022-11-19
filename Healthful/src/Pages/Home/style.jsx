@@ -18,23 +18,19 @@ export const SecaoBanner = styled.div`
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 100%;
+  width: 88%;
   min-height: 88%;
-  max-height: fit-content;
   background-image: url(${BannerIMG});
   background-size: cover;
   box-shadow: 0px 4px 4px 2px rgba(0,0,0,0.1);
-  word-wrap: break-word;
+  margin-left: 6%;
 `;
 
 export const Banner = styled.div`
   display: flex;
   flex-direction: column;
-  height: 20%;
+  height: 10%;
   text-align: center;
-  margin-right: 3%;
-  margin-left: auto;
-
   & span {
     margin: 3%;
     font-size: 23px;
