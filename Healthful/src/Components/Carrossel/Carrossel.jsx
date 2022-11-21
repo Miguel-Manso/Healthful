@@ -47,3 +47,5 @@ export function Slide ({ config }) {
     </Container>
   )
 }
+
+/* _________________________Fim do Carrossel___________________________ */
