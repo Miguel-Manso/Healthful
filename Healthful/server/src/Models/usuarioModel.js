@@ -74,10 +74,10 @@ export class Usuario{
         }
     }
 
-    async Insert(){
+    static  async Insert(){
         try{
             const { rowsAffected } = Connection.query(`insert into usuario values ('${this.nomeUser}', '${this.emailUser}', '${this.senhaUser}', '${this.dtNasc}', ${this.nivelUser}, ${this.statusUser}, '${this.dataInsert}', '${this.dataUpdate}')`)
-            return rowsAffected //antes tava true
+            return rowsAffected //antes tava trul
         }
         catch (err)
         {

@@ -24,10 +24,11 @@ routes.post('/comentario/novo', ComentarioController.novoComentario)
 routes.put('/comentario/alterar/:idUser', ComentarioController.updateComentario)
 routes.delete('/comentario/delete/:idUser', ComentarioController.deleteComentario)
 
-routes.get('/comentario', PostagemController.selectPostagem)
-routes.post('/comentario/novo', PostagemController.novoPostagem)
-routes.put('/comentario/alterar/:idUser', PostagemController.updatePostagem)
-routes.delete('/comentario/delete/:idUser', PostagemController.deletePostagem)
+routes.get('/postagem', PostagemController.selectPostagem)
+routes.get('/postagem/:idPost', PostagemController.selectPostagemfilter)
+routes.post('/postagem/novo', PostagemController.novoPostagem)
+routes.put('/postagem/alterar/:idPost', PostagemController.updatePostagem)
+routes.delete('/postagem/delete/:idPost', PostagemController.deletePostagem)
 
 
 export { routes }

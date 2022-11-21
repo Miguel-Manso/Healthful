@@ -54,6 +54,11 @@ export const ArtigoPreview = styled.div`
   text-transform: uppercase;
   font-size: 1.0rem;
   word-break: break-all;
+  overflow: hidden; // Removendo barra de rolagem
+  text-overflow: ellipsis; // Adicionando "..." ao final
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // Quantidade de linhas
+  -webkit-box-orient: vertical; 
 
 
 
@@ -67,4 +72,8 @@ export const CategoriaTitulo = styled.div`
   text-transform: uppercase;
   font-weight: bold;
   color: gray;
+`
+
+export const Bloco = styled.div`
+  
 `

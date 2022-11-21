@@ -54,6 +54,18 @@ export class Postagem {
         }
 }
 
+    async Filter(){
+        try{
+            const { recordset } = await Connection.query(`select * from postagem where idPost  = ${this.idPost }`)
+            return recordset
+        }
+        catch (err)
+        {
+            console.log("Error no postagemModel | Selectfilter | " + err)
+            return (err)
+        }
+    }
+
     static async Select(){
         try{
             const { recordset } = await Connection.query('select * from postagem ')
@@ -66,9 +78,9 @@ export class Postagem {
         }
     }
 
-    async Insert(){
+    async Insert(idPost,nomePost,textPost,FK_idUser,statusPost,dataInsert,dataUpdate,FK_idCategoria){
         try{
-            const { rowsAffected } = Connection.query(`insert into postagem  values ('${this.nomePost }', '${this.textPost }', ${this.statusPost }, '${this.dataInsert}', '${this.dataUpdate}')`)
+            const { rowsAffected } = await Connection.query(`insert into postagem  values (1,'${this.nomePost }', '${this.textPost}', ${this.FK_idUser}, ${this.statusPost}, '${this.dataInsert}', '${this.dataUpdate}', ${this.FK_idCategoria},)`)
             return rowsAffected //antes tava true
         }
         catch (err)
@@ -102,3 +114,4 @@ export class Postagem {
         }
     }
 }
+

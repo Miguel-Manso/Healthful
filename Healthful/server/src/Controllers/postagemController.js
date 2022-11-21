@@ -13,6 +13,21 @@ export class PostagemController{
         }
     }
 
+
+    static async selectPostagemfilter (req, res){
+        try {
+            const { idPost  } = req.params
+            const {nomePost, textPost, dataInsert, dataUpdate, statusPost} = req.body
+            const postagemfilter = await new Postagem ( idPost, nomePost, textPost, dataInsert, dataUpdate, statusPost).Filter()
+            return res.status(200).json(postagemfilter)
+        }
+        catch (err)
+        {
+            console.log("Erro no usuarioController | selectPostagem | " + err)
+            return res.status(500).json(err)
+        }
+    }
+
     static async novoPostagem(req, res){
         try {
             const { nomePost, textPost, dataInsert, dataUpdate, statusPost } = req.body
