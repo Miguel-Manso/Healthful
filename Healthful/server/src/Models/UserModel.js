@@ -1,9 +1,9 @@
-import { poolConnection } from "../../pool.js";
+import { CreatePool } from "../../database.js";
 
-const Connection = await poolConnection()
+const Connection = await CreatePool()
 
 export class Usuario{
-    constructor(nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate, idUser){
+    constructor(nomeUser, emailUser, senhaUser, nivelUser, idUser){
         if(nomeUser == '' || nomeUser == null || nomeUser == undefined){
             this.nomeUser = ''
         }else{
@@ -22,38 +22,11 @@ export class Usuario{
             this.senhaUser = senhaUser
         }
 
-        
-        if(dtNasc == '' || dtNasc == null || dtNasc == undefined){
-            this.dtNasc = ''
-        }else{
-            this.dtNasc = dtNasc
-        }
-
         if(nivelUser == '' || nivelUser == null || nivelUser == undefined){
             this.nivelUser = 1
         }else{
             this.nivelUser = 1
         }
-
-        if(statusUser == '' || statusUser == null || statusUser == undefined){
-            this.statusUser = 1
-        }else{
-            this.statusUser = 1
-        }
-
-        if(dataInsert == '' || dataInsert == null || dataInsert == undefined){
-            this.dataInsert = ''
-        }else{
-            this.dataInsert = dataInsert
-        }
-
-        if(dataUpdate == '' || dataUpdate == null || dataUpdate == undefined){
-            this.dataUpdate = ''
-        }else{
-            this.dataUpdate = dataUpdate
-        }
-
-        //fk em algum canto agui
 
         if(idUser == '' || idUser == null || idUser == undefined){
             this.idUser = ''
@@ -74,9 +47,9 @@ export class Usuario{
         }
     }
 
-    static  async Insert(){
+    async Insert(){
         try{
-            const { rowsAffected } = Connection.query(`insert into usuario values ('${this.nomeUser}', '${this.emailUser}', '${this.senhaUser}', '${this.dtNasc}', ${this.nivelUser}, ${this.statusUser}, '${this.dataInsert}', '${this.dataUpdate}')`)
+            const { rowsAffected } = Connection.query(`insert into usuario values ('${this.nomeUser}', '${this.emailUser}', '${this.senhaUser}', ${this.nivelUser})`)
             return rowsAffected //antes tava trul
         }
         catch (err)
@@ -88,7 +61,7 @@ export class Usuario{
 
     async Update(){
         try{
-            const { rowsAffected } =  await Connection.query(`update usuario set nomeUser = '${this.nomeUser}', emailUser = '${this.emailUser}', senhaUser = '${this.senhaUser}', dtNasc = '${this.dtNasc}', nivelUser = ${this.nivelUser}, statusUser = ${this.statusUser}, dataInsert = '${this.dataInsert}', dataUpdate = '${this.dataUpdate}' where idUser = ${this.idUser}`)
+            const { rowsAffected } = Connection.query(`update usuario set nomeUser = '${this.nomeUser}' where idUser = ${this.idUser}`)
             return rowsAffected
         }
         catch (err)
