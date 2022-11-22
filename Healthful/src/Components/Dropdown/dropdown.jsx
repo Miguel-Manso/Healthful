@@ -1,17 +1,10 @@
 import { useState } from "react";
-<<<<<<< HEAD
-import {Dropdownitem,Dropdown, Dropdownbtn, Dropdowncontent} from "./style"
-
-
-export function Jacoba ({ selected, setSelected }) { 
-=======
 import Button from "../Button/button";
 import {Dropdownitem, Dropdown, Dropdownbtn, Dropdowncontent} from "./style"
 
 export function DropdownComp ({ selected, setSelected, link1, link2, link3, link4,
      conteudo1, conteudo2, conteudo3, conteudo4, estilo}) { 
 
->>>>>>> c37739ba6bad3a9a6721262caf915ef2d85e8333
     const [isActive, setIsActive] = useState(false); 
     const options = [<a href={link1} style={{textDecoration:'none'}}>{conteudo1}</a>,
                      <a href={link2} style={{textDecoration:'none'}}>{conteudo2}</a>, 

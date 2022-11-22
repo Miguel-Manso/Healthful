@@ -1,4 +1,4 @@
-import { Usuario } from "../Models/UserModel.js";
+import { Usuario } from "../Models/usuarioModel.js";
 
 export class UsuarioController{
     static async selectUsuario (req, res){
@@ -15,8 +15,8 @@ export class UsuarioController{
 
     static async novoUsuario(req, res){
         try {
-            const { nomeUser, emailUser, senhaUser, nivelUser} = req.body
-            const novo_Usuario = await new Usuario (nomeUser, emailUser, senhaUser, nivelUser).Insert()
+            const { nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate } = req.body
+            const novo_Usuario = await new Usuario (nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate ).Insert()
             return res.status(200).json(novo_Usuario)
         }
         catch (err)
@@ -29,9 +29,9 @@ export class UsuarioController{
     static async updateUsuario(req, res){
         try{
             const { idUser } = req.params
-            const {nomeUser} = req.body
-            const alterar_Usuario = await new Usuario (nomeUser,'', '', '', idUser).Update();
-            return res.status(200).json(alterar_Usuario);
+            const {nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate} = req.body
+            const alterar_Usuario = await new Usuario (nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate, idUser).Update()
+            return res.status(200).json(alterar_Usuario)
         }
         catch (err)
         {
@@ -43,8 +43,8 @@ export class UsuarioController{
     static async deleteUsuario(req, res){
         try{
             const { idUser } = req.params
-            const {nomeUser, emailUser, senhaUser, nivelUser} = req.body
-            const deletar_Usuario = await new Usuario (nomeUser, emailUser, senhaUser, nivelUser, idUser).Delete()
+            const {nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate} = req.body
+            const deletar_Usuario = await new Usuario (nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate, idUser).Delete()
             return res.status(200).json(deletar_Usuario)
         }
         catch (err)
@@ -54,9 +54,9 @@ export class UsuarioController{
         }
     }
 
-    static async loginUsuario(req, res){ 
+    static async loginUsuario(req, res){
         try {
-            const {nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate} = req.body;
+            const {nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate} = req.body
             const login_Usuario = await new Usuario(nomeUser, emailUser, senhaUser, dtNasc, nivelUser, statusUser, dataInsert, dataUpdate).Login()
             return res.status(200).json(login_Usuario)
         } 

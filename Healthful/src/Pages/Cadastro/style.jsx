@@ -53,7 +53,7 @@ const TituloCadastro = styled.h2`
     
 `
 
-const InputCadastro = styled.form`
+const InputCadastro = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
