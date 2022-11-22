@@ -1,4 +1,6 @@
 import Button from "../../Components/Button/button.jsx";
+import { Footer } from "../../Components/Footer/footer.jsx";
+import Input from "../../Components/Input/input.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { Artigo, Categorias, CategoriaTitulo, Container, CategoryTitle, ArtigoTitulo, ArtigoPreview } from "./style.jsx";
 
@@ -7,6 +9,9 @@ export function Artigos () {
         <>
                <Navbar />
         <Container>
+
+        <Input estilo="2" placeholder="Pesquise Um Artigo"/>
+
  
 
         <Categorias>
@@ -44,8 +49,9 @@ export function Artigos () {
         </CategoryTitle>
 
 
-
+    
         </Container>
+        <Footer />
         </>
     )
   }

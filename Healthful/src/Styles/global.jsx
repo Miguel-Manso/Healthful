@@ -15,14 +15,14 @@ const GlobalStyle = createGlobalStyle`
 
   }
   html, body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     text-rendering: optimizeLegibility;
    
   }
 
   #root {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
   }
 `;

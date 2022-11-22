@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: block;
   overflow: auto;
   position: fixed;
   flex-direction: column;
@@ -10,8 +9,7 @@ export const Container = styled.div`
   background-color: white;
   height: 100%;
   max-width: 100%;
-  min-width: 900px;
-  z-index: 9999;
+
 `;
 
 export const Apresentacao = styled.div`
@@ -50,6 +48,11 @@ export const HomeTexto = styled.div`
   justify-content: center;
   text-transform: uppercase;
   font-size: 1.5rem;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
+
 
  
 `

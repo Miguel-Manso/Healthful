@@ -124,4 +124,21 @@ export const IconEnter = styled.div`
  
 `
 
+export const IconArrow = styled.div`
+  svg{
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    fill: #ffffff;
+    z-index: 10;
+    animation: ${fadeIn} 1s linear;
+    &:hover {
+    fill: #939393;
+  }
+  }
+  display: flex;
+  cursor: pointer;
+
+`
+
 export { IconFacebook, IconInstagram, IconTwitter}

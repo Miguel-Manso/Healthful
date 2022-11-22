@@ -44,9 +44,10 @@ export const Nav = styled.div`
   background: white;
   width: 100%;
   position: top;
-  -webkit-box-shadow: 0px 3px 0px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 3px 0px -1px rgba(0,0,0,0.75);
-box-shadow: 0px 3px 0px -1px rgba(0,0,0,0.75);
+  margin-bottom: 2%;
+
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.265);
 `;
 export const ImagemNav = styled.img`
     width: 4.6rem;

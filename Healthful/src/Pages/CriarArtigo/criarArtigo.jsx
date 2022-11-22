@@ -1,11 +1,11 @@
 
-import { Container, But, Butt, Butto, Inputm, ContainerInput, Separador} from "./style.jsx"
+import { Container, Buttons, InputTitle, ContainerInput, Separador} from "./style.jsx"
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { useState } from "react";
 import { TextEditor } from "../../Components/TextEditor/textEditor.jsx";
-import { Jacoba } from "../../Components/Dropdown/Dropdown.jsx";
 import Button from "../../Components/Button/button.jsx";
+import { DropdownComp } from "../../Components/Dropdown/dropdown.jsx";
 
 
 
@@ -28,17 +28,19 @@ export function CriarArtigo(){
               
                 
                 <ContainerInput>
-                    <Inputm placeholder="Título"/>
+                    <InputTitle placeholder="Título"/>
                     <Separador/>
                     <TextEditor style={{}} setValue={setValue}/>
                 </ContainerInput>
                
-                <Butto>
-                    <Butt>
-                    <Jacoba selected={selected} setSelected={setSelected}/> 
-                    </Butt>
-                    <Button estilo="6" conteudo='Enviar para revisão'/>
-                </Butto>
+
+                <Buttons>
+                    <DropdownComp link1='/login' link2='/cadastro' link3='/perfil' 
+                conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil'
+                selected={selected} style={{ textDecoration: 'none' }} setSelected={setSelected}/> 
+                <Button estilo="6" conteudo='Enviar para revisão'/>
+                </Buttons>
+
                 
               
           

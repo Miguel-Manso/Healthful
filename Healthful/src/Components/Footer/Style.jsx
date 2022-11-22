@@ -7,7 +7,7 @@ position: absolute;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 20%;
+  min-height: 20%;
   background-color: #000;
   color: #fff;
   padding: 1.5rem 2rem;
