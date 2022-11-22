@@ -1,4 +1,4 @@
-import { Hamburger, MenuLink, Menu, Nav, ImagemNav, MenuNav } from "./style.jsx";
+import { Hamburger, MenuLink, Menu, Nav, ImagemNav, MenuNav, } from "./style.jsx";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo_small.svg"
 import { useState } from "react";

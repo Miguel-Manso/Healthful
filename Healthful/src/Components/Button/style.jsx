@@ -134,3 +134,21 @@ export const ButtonUser = styled.button`
     transition-duration: 0.4s
     }
 `
+
+export const ButtonDropCategoria = styled.button`
+    color: #ffffff;
+    padding: 3%;
+    background-color:#3765cb;
+    border: 1px #212121 ;
+    text-transform: uppercase;
+    letter-spacing: 0.2 rem;
+    width: 200px;
+    height: auto;
+    padding: 3%;
+    border: none ;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    a { color: inherit; } 
+    text-decoration: none;
+
+`

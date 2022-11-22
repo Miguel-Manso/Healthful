@@ -4,6 +4,7 @@ import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { Container,  ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
 import Logo from "../../Assets/logo.svg";
+import { Slide } from "../../Components/Carrossel/Carrossel.jsx";
 
 /*PlaceHolder*/
 import Bike from "../../Assets/Placeholder/Bike.svg";
@@ -18,6 +19,16 @@ import Certificado from "../../Assets/HomeImg/certificados.svg";
 import { CardComp } from "../../Components/Cards/cards.jsx";
 import Button from "../../Components/Button/button.jsx";
 
+const config = [
+  {
+    title: 'imagem I',
+    image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  },
+  {
+    title: 'imagem II',
+    image: 'https://images.pexels.com/photos/14113084/pexels-photo-14113084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  }
+]
 
 export function Home () {
   const [value, setValue] = useState("")
@@ -27,7 +38,7 @@ export function Home () {
       <Container>
         <Navbar />
           
-          {/* Banner novo aqui */}
+        <Slide config={config} />
 
           
           <Apresentacao>
@@ -68,7 +79,7 @@ export function Home () {
               
         </CardsCategoria> 
 
-        <HomeTitulo style={{'margin-top': '10%', 'font-size': '3.5rem'}}>
+        <HomeTitulo style={{ 'font-size': '3.5rem'}}>
           Crie Ou Leie Artigos
         </HomeTitulo>
          
@@ -78,8 +89,8 @@ export function Home () {
           <ImagemArtigo src={Escrita} />
           <Separador />
             OS ARTIGOS SÃO SEPARADOS POR <br />
-            CATEGORIAS, FACILITANDO SUA <br /> ORGANIZAÇÃO
-            E CARACTERIZAÇÃO.
+            CATEGORIAS, FACILITANDO SUA <br /> 
+            ORGANIZAÇÃO E CARACTERIZAÇÃO.
        
           </HomeTexto>
         </SecaoArtigo>

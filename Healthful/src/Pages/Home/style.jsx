@@ -8,8 +8,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 100vh;
-  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 900px;
+  z-index: 9999;
 `;
 
 export const Apresentacao = styled.div`
@@ -36,7 +38,6 @@ export const HomeTitulo = styled.div`
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  margin-top: 8%;
   font-size: 4rem;
   text-transform: uppercase;
 `
@@ -90,13 +91,11 @@ export const Separador = styled.span`
 
 export const CardsCategoria = styled.div`
   padding: 2%;
-  margin-top: 7%;
+  height: 530px;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
-  display: flex;
  position: relative;
 
 `

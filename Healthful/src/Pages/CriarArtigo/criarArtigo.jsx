@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 import { TextEditor } from "../../Components/TextEditor/textEditor.jsx";
 import { Jacoba } from "../../Components/Dropdown/Dropdown.jsx";
+import Button from "../../Components/Button/button.jsx";
 
 
 
@@ -46,15 +47,10 @@ export function CriarArtigo(){
                 </ContainerInput>
                
                 <Butto>
-                  
                     <Butt>
-                    <Jacoba selected={selected} setSelected={setSelected}/>
-                      
+                    <Jacoba selected={selected} setSelected={setSelected}/> 
                     </Butt>
-
-                    <But>
-                      Enviar para revisão
-                    </But>
+                    <Button estilo="6" conteudo='Enviar para revisão'/>
                 </Butto>
                 
               

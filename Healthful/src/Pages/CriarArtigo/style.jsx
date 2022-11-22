@@ -72,8 +72,8 @@ export const Butt = styled.div`
     margin: auto;
     cursor: pointer;
     text-decoration: blink;
-    width: 100%;
     text-align: center;
+    margin: 1%;
     
 `;
 
@@ -87,5 +87,3 @@ export const Butto = styled.div`
     
 
 `;
-
-
