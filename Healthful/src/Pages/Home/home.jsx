@@ -21,11 +21,11 @@ import Button from "../../Components/Button/button.jsx";
 
 const config = [
   {
-    title: 'imagem um',
+    title: 'imagem I',
     image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   {
-    title: 'imagem dois',
+    title: 'imagem II',
     image: 'https://images.pexels.com/photos/14113084/pexels-photo-14113084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   }
 ]
@@ -79,7 +79,7 @@ export function Home () {
               
         </CardsCategoria> 
 
-        <HomeTitulo style={{'margin-top': '10%', 'font-size': '3.5rem'}}>
+        <HomeTitulo style={{ 'font-size': '3.5rem'}}>
           Crie Ou Leie Artigos
         </HomeTitulo>
          
@@ -89,8 +89,8 @@ export function Home () {
           <ImagemArtigo src={Escrita} />
           <Separador />
             OS ARTIGOS SÃO SEPARADOS POR <br />
-            CATEGORIAS, FACILITANDO SUA <br /> ORGANIZAÇÃO
-            E CARACTERIZAÇÃO.
+            CATEGORIAS, FACILITANDO SUA <br /> 
+            ORGANIZAÇÃO E CARACTERIZAÇÃO.
        
           </HomeTexto>
         </SecaoArtigo>

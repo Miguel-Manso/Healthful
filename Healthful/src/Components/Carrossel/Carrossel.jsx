@@ -1,8 +1,7 @@
 /* _________________Parte da importação para o carrossel_________________ */
 import React from "react";
 import { useState } from "react";
-import { Container, ImageContainer, NavButton, Title, DotContainer,
-Dot } from "./Style.jsx";
+import { Container, ImageContainer, NavButton, Title, DotContainer,Dot, } from "./Style.jsx";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 /* ______________________________________________________________________ */
 
@@ -23,18 +22,23 @@ export function Slide ({ config }) {
 
   return (
     <Container>
+      
       <ImageContainer src={config[imageCarrossel].image} />
       <Title>
+
+
         {config[imageCarrossel].title}
+        
       </Title>
+      
+            <NavButton right onClick={next}>
+              <AiOutlineArrowRight />
+            </NavButton>
 
-      <NavButton right onClick={next}>
-        <AiOutlineArrowRight />
-      </NavButton>
-
-      <NavButton left onClick={prev}>
-        <AiOutlineArrowLeft />
-      </NavButton>
+            <NavButton left onClick={prev}>
+              <AiOutlineArrowLeft />
+            </NavButton>
+      
 
       <DotContainer>
         {

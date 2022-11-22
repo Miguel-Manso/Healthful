@@ -6,7 +6,7 @@ position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 20%;
   background-color: #000;
   color: #fff;

@@ -24,16 +24,14 @@ export const Dropdownitem = styled.div`
 export const Dropdown = styled.div`
 
     width: auto;
-    margin: auto;
     
 > ${Dropdownbtn}{
-    padding: 10px;
     font-weight: bold;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     border-radius: 0.5rem;
     text-align: center;
+    margin-top:50%;
+    justify-content: center;
 
 }
 

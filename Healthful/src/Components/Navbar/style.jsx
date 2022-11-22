@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-const MenuLink = styled.a`
+export const MenuLink = styled.a`
   display: flex;
-  font-size: 1.3rem !important;
+  font-size: 1.1rem !important;
   padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
@@ -17,15 +17,16 @@ const MenuLink = styled.a`
     color: #0b8700;
   }
 `;
-const MenuNav = styled.div`
+export const MenuNav = styled.div`
+  margin-right: 19%;
 
 `;
 
-const Menu = styled.div`
-  display: flex;
+export const Menu = styled.div`
+  display:flex;
+  margin-left: auto;  
   justify-content: space-between;
   align-items: center;
-  position: relative;
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
   @media (max-width: 768px) {
@@ -37,29 +38,25 @@ const Menu = styled.div`
   }
 `;
 
-const Nav = styled.div`
-  padding: 1.5rem 2rem;
+export const Nav = styled.div`
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  padding: 0.6rem ;
   background: white;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   position: top;
-  z-index: 9999;
+  -webkit-box-shadow: 0px 3px 0px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 0px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 0px -1px rgba(0,0,0,0.75);
 `;
-const ImagemNav = styled.img`
-    height: 4.5rem;
-`
-const ImagemNavProfile = styled.img`
-    height: 2.6rem;
+export const ImagemNav = styled.img`
+    width: 4.6rem;
+    margin-top: 10%;
 `
 
 
-const Hamburger = styled.div`
-  display: none;
+export const Hamburger = styled.div`
   flex-direction: column;
+  justify-content: center;
   cursor: pointer;
   span {
     height: 2px;
@@ -70,8 +67,6 @@ const Hamburger = styled.div`
   }
   @media (max-width: 768px) {
     display: flex;
+    margin-left: 5%;
   }
 `;
-
-
-export {Nav, Hamburger, Menu, MenuLink, ImagemNav, ImagemNavProfile, MenuNav}
