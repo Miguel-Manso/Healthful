@@ -1,5 +1,4 @@
 import Button from "../../Components/Button/button.jsx";
-import axios from 'axios';
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
@@ -24,6 +23,9 @@ export function Artigos () {
         <>
                <Navbar />
         <Container>
+
+        <Input estilo="2" placeholder="Pesquise Um Artigo"/>
+
  
 
         <Categorias>
@@ -64,7 +66,15 @@ export function Artigos () {
           
         </Artigo>
         
+
+        <CategoryTitle>
+          Populares 
+        </CategoryTitle>
+
+
+
         </Container>
+        <Footer />
         </>
     )
   }

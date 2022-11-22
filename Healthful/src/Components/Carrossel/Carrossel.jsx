@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { Container, ImageContainer, NavButton, Title, DotContainer,Dot, } from "./Style.jsx";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import Icon from "../IconComp/icon.jsx";
 /* ______________________________________________________________________ */
 
 export function Slide ({ config }) {
@@ -25,18 +26,16 @@ export function Slide ({ config }) {
       
       <ImageContainer src={config[imageCarrossel].image} />
       <Title>
-
-
         {config[imageCarrossel].title}
         
       </Title>
       
             <NavButton right onClick={next}>
-              <AiOutlineArrowRight />
+              <Icon estilo='7' conteudo={<AiOutlineArrowRight />}/>
             </NavButton>
 
             <NavButton left onClick={prev}>
-              <AiOutlineArrowLeft />
+              <Icon estilo='7' conteudo={<AiOutlineArrowLeft />}/>
             </NavButton>
       
 

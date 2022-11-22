@@ -4,7 +4,7 @@ import logo from "../../Assets/logo_small.svg"
 import { useState } from "react";
 import Icon from "../../Components/IconComp/icon.jsx"
 import { FiUser } from 'react-icons/Fi'
-import { NavDrop } from "../Nav Dropdown/dropdown.jsx";
+import { DropdownComp } from "../Dropdown/dropdown.jsx";
 
 
 
@@ -37,12 +37,13 @@ export function Navbar () {
             <Menu Aberto={Aberto}>
                 <MenuLink><Link to="/artigos" style={{ textDecoration: 'none' }}>Artigos</Link></MenuLink>
                 <MenuLink><Link to="/criar-artigo" style={{ textDecoration: 'none' }}>Crie Artigos</Link></MenuLink>
-                <MenuLink><Link to="/pesquisar" style={{ textDecoration: 'none' }}>Pesquisar</Link></MenuLink>   
 
               
             </Menu>
             <MenuNav>
-                <NavDrop selected={selected} />
+            <DropdownComp link1='/login' link2='/cadastro' link3='/perfil' 
+                conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil'
+                selected={selected} estilo='1' />
             </MenuNav>
        
 

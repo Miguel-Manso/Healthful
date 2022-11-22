@@ -1,6 +1,16 @@
 import styled from "styled-components";
+export const Dropdownitem = styled.div`
+
+
+`;
+
+export const Dropdowncontent = styled.div`
+
+
+`;
 
 export const Container = styled.div`
+
     
 
 `;
@@ -8,46 +18,53 @@ export const Dropdownbtn = styled.div`
 
 
 `;
-export const Dropdowncontent = styled.div`
 
-
-`;
-export const Dropdownitem = styled.div`
-
-
-`;
 
 
 export const Dropdown = styled.div`
+
+    width: auto;
+    margin: auto;
+    text-decoration: none;
+
+    
 > ${Dropdownbtn}{
-    padding: 3%;
-    width: 200px;
-    margin-bottom: 2%;
+    padding: 10px;
+    background: #00FF00;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
 
 }
 
 > ${Dropdowncontent}{
     position: absolute;
     top: auto;
-    align-items: center;
-    margin-top: 0.5%;
+    padding:15px;
+    background: #00FF00;
+    font-weight: bold;
+    color: #333;
+    width: auto;
+    border-radius: 1rem;
     text-align: center;
-    -webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
-    -moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
-    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
-    width: 200px;
 
 
     > ${Dropdownitem}{
-        align-items: center;
+        padding: 10px;
         cursor: pointer;
         transition: all 0.2s;
-        width: 100%;
-        padding: 3%;
+        border-radius: 1rem;
+        text-align: center;
+        overflow: auto;
+        :hover {background: #147014;}
         text-decoration: none;
 
-        
-        :hover {background: #ffffff;}
 
     }
 }

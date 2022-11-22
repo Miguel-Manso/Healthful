@@ -52,7 +52,8 @@ export const InputAlter = styled.input`
 `
 
 export const InputSearch = styled.input`
-    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
@@ -71,6 +72,6 @@ export const InputSearch = styled.input`
     border: 4px solid #108a02;
 
     @media (min-width: 768px) {
-    width: 70%;
+    width: 100%;
     }
 `

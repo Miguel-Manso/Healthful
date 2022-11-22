@@ -4,38 +4,33 @@ import { css } from "styled-components";
 
 /* Organizando o Steled do Carrossel */
 export const Container = styled.div`
-  width: 100%;
+width: 100%;
   height: 80%;
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: -10;
-  margin-top: 0.6%;
-  border-radius: 0.6rem;
+  margin-top: 2.2%;
 `;
 
 export const ImageContainer = styled.img`
   width: 98%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2rem;
 `;
 
 
 export const NavButton = styled.button`
-  width: 4%;
-  height: 10%;
+position: absolute;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color: none;
-  margin-top: 20%;
-  outline: none;
   cursor: pointer;
-  position: absolute;
-  border-radius: 2rem;
-  color: #000000;
   
-  transform: translate(0, -50%);
-  ${(props) => props.right === true ? css` right: 2%;` : css` left: 2%;`}
+  ${(props) => props.right === true ? css` right: 3%;` : css` left: 3%;`}
 `;
 
 export const Title = styled.h3`
@@ -43,7 +38,6 @@ export const Title = styled.h3`
   display: flex;
   color: white;
   position: absolute;
-  font-family: 'Ubuntu', sans-serif;
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, 0);

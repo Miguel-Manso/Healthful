@@ -3,34 +3,12 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    display:flex;
-    font-family: 'Ubuntu', sans-serif;
-    flex-direction: column;
-    justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
+    overflow: auto;
     
 `
 
-
-
-
-export const But = styled.div`
-    align-items:center;
-    justify-content: center;
-    border:solid #3660e9;
-    border-radius: 0.4rem;
-    text-align: center;
-    background-color:#3660e9;
-    width:auto;
-    cursor: pointer;
-    text-decoration: blink;
-    width: 100%;
-    font-weight: bold;
-    margin: 1%;
-
-    
-`;
 
 export const ContainerInput = styled.div` 
     display: flex;
@@ -40,7 +18,7 @@ export const ContainerInput = styled.div`
 
 
 `;
-export const Inputm = styled.input` 
+export const InputTitle = styled.input` 
     
     width: 100%;
     font-size: 1.2rem;
@@ -63,27 +41,9 @@ export const Separador =styled.div`
 `;
 
 
-export const Butt = styled.div`
-    align-items:center;
-    justify-content: center;
-    border: solid #00FF00;
-    border-radius: 0.4rem;
-    background-color:#00FF00;
-    margin: auto;
-    cursor: pointer;
-    text-decoration: blink;
-    text-align: center;
-    margin: 1%;
-    
-`;
-
-export const Butto = styled.div`
+export const Buttons = styled.div`
     display: flex;
-    align-items:center;
-    margin: auto;
-    margin-bottom: 25%;
-    margin-top:2%;
+    align-items: center;
+    justify-content: center;
+`
 
-    
-
-`;
