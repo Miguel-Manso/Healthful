@@ -4,7 +4,7 @@ export const Dropdownitem = styled.div`
 
 `;
 
-export const Dropdowncontent = styled.div`
+export const DropdownContentNav = styled.div`
 
 
 `;
@@ -14,11 +14,26 @@ export const Container = styled.div`
     
 
 `;
-export const Dropdownbtn = styled.div`
+export const ButtonNav = styled.div`
 
 
 `;
 
+export const ButtonCategoria = styled.div`
+
+`;
+
+export const DropdownItemCategoria = styled.div`
+
+`;
+
+export const DropdownItemNav = styled.div`
+
+`;
+
+export const DropdownContentCategoria = styled.div`
+
+`;
 
 
 export const Dropdown = styled.div`
@@ -28,10 +43,9 @@ export const Dropdown = styled.div`
     text-decoration: none;
 
     
-> ${Dropdownbtn}{
+> ${ButtonNav}{
     padding: 10px;
-    background: #00FF00;
-    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    background: none;
     font-weight: bold;
     color: #333;
     display: flex;
@@ -43,19 +57,66 @@ export const Dropdown = styled.div`
 
 }
 
-> ${Dropdowncontent}{
+> ${ButtonCategoria}{
+    color: #ffffff;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color:#19f100;
+    border: 1px #212121 ;
+    text-transform: uppercase;
+    letter-spacing: 0.2 rem;
+    height: auto;
+    border: none ;
+    padding:1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    a { color: inherit; } 
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+
+};
+
+> ${DropdownContentNav}{
     position: absolute;
     top: auto;
     padding:15px;
-    background: #00FF00;
+    background: #ce2cff;
     font-weight: bold;
     color: #333;
     width: auto;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     text-align: center;
 
 
-    > ${Dropdownitem}{
+    > ${DropdownItemNav}{
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.2s;
+        border-radius: 1rem;
+        text-align: center;
+        overflow: auto;
+        :hover {background: #147014;}
+        text-decoration: none;
+
+
+    }
+}
+
+> ${DropdownContentCategoria}{
+    position: absolute;
+    top: auto;
+    padding:15px;
+    background: #9900ff;
+    font-weight: bold;
+    color: #333;
+    width: auto;
+    border-radius: 0.3rem;
+    text-align: center;
+
+
+    > ${DropdownItemCategoria}{
         padding: 10px;
         cursor: pointer;
         transition: all 0.2s;

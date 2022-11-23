@@ -1,4 +1,4 @@
-import { ButtonCompAlter, ButtonCompGreen, ButtonCompDelete, ButtonCompWhite, ButtonCompCategoria, ButtonUser, ButtonDropCategoria } from "./style.jsx";
+import { ButtonCompAlter, ButtonCompGreen, ButtonCompDelete, ButtonCompWhite, ButtonCompCategoria, ButtonUser, ButtonEnviarArtigo } from "./style.jsx";
 
 export default function Button({onClick, conteudo, estilo}) { 
         if (estilo == 1){
@@ -25,7 +25,7 @@ export default function Button({onClick, conteudo, estilo}) {
 
         } else if (estilo == 6){
             return(
-                <ButtonDropCategoria onClick={onClick}>{conteudo}</ButtonDropCategoria>)
+                <ButtonEnviarArtigo onClick={onClick}>{conteudo}</ButtonEnviarArtigo>)
 
 
         }else {

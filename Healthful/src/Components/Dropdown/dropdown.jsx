@@ -1,6 +1,5 @@
 import { useState } from "react";
-import Button from "../Button/button";
-import {Dropdownitem, Dropdown, Dropdownbtn, Dropdowncontent} from "./style"
+import {Dropdownitem, Dropdown, ButtonNav, ButtonCategoria, DropdownContentCategoria, DropdownContentNav, DropdownItemNav, DropdownItemCategoria} from "./style"
 
 export function DropdownComp ({ selected, setSelected, link1, link2, link3, link4,
      conteudo1, conteudo2, conteudo3, conteudo4, estilo}) { 
@@ -13,26 +12,23 @@ export function DropdownComp ({ selected, setSelected, link1, link2, link3, link
     if (estilo == 1){
             return (
 
-                //Dropdown do Lucas
                 <Dropdown>
                 
-                {/* Lucas, esse Button aqui em baixo é do componente button. Vai nele e cria um else
-                novo. Do jeito que tava antes era muito ruim. Vou mandar Pro pablo fazer tbm */}
-                <Button estilo='' onClick={(e) => 
+                <ButtonNav onClick={(e) => 
                     setIsActive(!isActive)}>
                 {selected}
                 <span ></span> 
 
-                </Button>
+                </ButtonNav>
                 
                 {isActive && (
-                    <Dropdowncontent>
+                    <DropdownContentNav>
                     {options.map((option) => (
-                    <Dropdownitem onClick={(e) => {setSelected(option);setIsActive(false);}}>
+                    <DropdownItemNav onClick={(e) => {setSelected(option);setIsActive(false);}}>
                         {option}
-                    </Dropdownitem>
+                    </DropdownItemNav>
                     ))}
-                </Dropdowncontent>
+                </DropdownContentNav>
                 )}
             </Dropdown>
             )
@@ -42,19 +38,19 @@ export function DropdownComp ({ selected, setSelected, link1, link2, link3, link
                 //Dropdown do Pablo
 
             <Dropdown>
-                <Dropdownbtn onClick={(e) => 
+                <ButtonCategoria onClick={(e) => 
                     setIsActive(!isActive)}>
                 {selected}
                 <span ></span> 
-                </Dropdownbtn>
+                </ButtonCategoria>
                 {isActive && (
-                    <Dropdowncontent>
+                    <DropdownContentCategoria>
                     {options.map((option) => (
-                    <Dropdownitem onClick={(e) => {setSelected(option);setIsActive(false);}}>
+                    <DropdownItemCategoria onClick={(e) => {setSelected(option);setIsActive(false);}}>
                         {option}
-                    </Dropdownitem>
+                    </DropdownItemCategoria>
                     ))}
-                </Dropdowncontent>
+                </DropdownContentCategoria>
                 )}
             </Dropdown>
         )

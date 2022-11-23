@@ -16,8 +16,11 @@ width: 100%;
 
 export const ImageContainer = styled.img`
   width: 98%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 100%;
   object-fit: cover;
+  border-radius: 1rem;
 `;
 
 
@@ -28,6 +31,8 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
   cursor: pointer;
   
   ${(props) => props.right === true ? css` right: 3%;` : css` left: 3%;`}

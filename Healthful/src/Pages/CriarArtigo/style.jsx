@@ -3,9 +3,14 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    margin-left: 10%;
-    margin-right: 10%;
     overflow: auto;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
     
 `
 
@@ -15,6 +20,10 @@ export const ContainerInput = styled.div`
     flex-direction: column;
     font-size:20px;
     margin-top:2%;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+
 
 
 `;
@@ -42,8 +51,6 @@ export const Separador =styled.div`
 
 
 export const Buttons = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: flex;
 `
 

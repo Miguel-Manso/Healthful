@@ -49,17 +49,17 @@ export function CriarArtigo(){
 
                 <Buttons>
                     <DropdownComp link1='/login' link2='/cadastro' link3='/perfil' 
-                conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil'
-                selected={selected} style={{ textDecoration: 'none' }} setSelected={setSelected}/> 
-                <Button  onClick={()=>HandleClickButton()} estilo="6" conteudo='Enviar para revisão'/>
+                    conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil'
+                    selected={selected} style={{ textDecoration: 'none' }} setSelected={setSelected}/> 
+                    <Button  onClick={()=>HandleClickButton()} estilo="6" conteudo='Enviar para revisão'/>
                 </Buttons>
 
                 
               
           
-          
+          <Footer />
         </Container>
-        <Footer />
+        
 
         </>
     )

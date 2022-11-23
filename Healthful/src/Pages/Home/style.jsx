@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: white;
   height: 100%;
-  max-width: 100%;
+  width: 100%;
 
 `;
 
@@ -68,7 +68,7 @@ export const CrieArtigo = styled.div`
   background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
-  background-image: linear-gradient(0deg, rgba(15,123,5,1) 0%, rgba(25,241,0,1) 100%);
+  background-image: linear-gradient(0deg, rgba(15,123,5,1) 0%, #19f100 100%);
 ;
 `
 
@@ -98,6 +98,7 @@ export const CardsCategoria = styled.div`
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: center;
   align-items: center;
  position: relative;
 

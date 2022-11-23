@@ -59,7 +59,7 @@ export const ButtonCompDelete = styled.button`
 `
 export const ButtonCompAlter = styled.button`
     color: #ffffff;
-    background-color:#2DABD3;
+    background-color:#2dd354;
     border: 1px #212121 ;
     text-transform: uppercase;
     letter-spacing: 0.2 rem;
@@ -135,7 +135,7 @@ export const ButtonUser = styled.button`
     }
 `
 
-export const ButtonDropCategoria = styled.button`
+export const ButtonEnviarArtigo = styled.button`
     color: #ffffff;
     padding: 1%;
     background-color:#3765cb;

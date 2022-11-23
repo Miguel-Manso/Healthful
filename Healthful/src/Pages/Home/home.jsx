@@ -35,8 +35,10 @@ export function Home () {
   
   return (
     <>
+  
+
       <Container>
-        <Navbar />
+      <Navbar />
           
         <Slide config={config} />
 
@@ -146,8 +148,11 @@ export function Home () {
         </SecaoArtigo>
        
         
+      
         <Footer />
       </Container>
+
+
     </>
   )
 }
