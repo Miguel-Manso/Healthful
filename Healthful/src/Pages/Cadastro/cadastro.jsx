@@ -12,7 +12,9 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa"
 export function Cadastro(){
 
     const[values, setValues] = useState();
+
     const navigate = useNavigate()
+    
     const HandleChangeValues = (value) =>{
         setValues(prevValue =>({
             ...prevValue,

@@ -2,12 +2,45 @@ import Button from "../../Components/Button/button.jsx";
 import { Footer } from "../../Components/Footer/footer.jsx";
 import Input from "../../Components/Input/input.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
-import { Artigo, Categorias, CategoriaTitulo, Container, CategoryTitle, ArtigoTitulo, ArtigoPreview } from "./style.jsx";
+import { Artigo, Categorias, Categoriaspace, CategoriaTitulo, Container, CategoryTitle, ArtigoTitulo, ArtigoPreview } from "./style.jsx";
+import axios from 'axios'
+import {useEffect, useState} from 'react';
+
 
 export function Artigos () {
+
+  const [ post, setPost ] = useState([])
+  const [ cat, setCat ] = useState([])
+
+    useEffect(() => {
+        axios.get("http://localhost:4000/postagem")
+        .then((response) => {
+           setPost(response.data)
+        })
+        .catch(() => {
+            console.log("deu merda porra!!")
+        })
+    } )
+
+    useEffect(() => {
+      axios.get("http://localhost:4000/categoria")
+      .then((response) => {
+         setCat(response.data)
+      })
+      .catch(() => {
+          console.log("deu merda porra!!")
+      })
+  } )
+
+
+
+
+
+
+
     return (
         <>
-               <Navbar />
+        <Navbar />
         <Container>
 
         <Input estilo="2" placeholder="Pesquise Um Artigo"/>
@@ -18,14 +51,13 @@ export function Artigos () {
 
         <CategoriaTitulo>Categorias</CategoriaTitulo>
 
-        <Button estilo="4" conteudo="Saúde Mental"/>     
-        <Button estilo="4" conteudo="Saúde Física"/>
-        <Button estilo="4" conteudo="Musculação"/>
-        <Button estilo="4" conteudo="Nutrição"/>     
-        <Button estilo="4" conteudo="Calistenia"/>
-        <Button estilo="4" conteudo="Esportes"/>
-        <Button estilo="4" conteudo="Biking"/>     
-        <Button estilo="4" conteudo="Yoga"/>
+        <Categoriaspace>
+          {cat.map((cats,key) => {
+            return(<div  key={key}>
+              <Button estilo="4" conteudo={cats.nomeCategoria}/>
+            </div>)
+          })}
+        </Categoriaspace>
 
         </Categorias>
 
@@ -34,12 +66,21 @@ export function Artigos () {
         </CategoryTitle>
 
         <Artigo>
-            <ArtigoTitulo>
-            Quer Saber Como Ganhar Dinheiro Na Internet?
-            </ArtigoTitulo>
-            <ArtigoPreview>
-            Vou-me embora pra Pasárgada é um poema do escritor modernista brasileiro Manuel Bandeira. Este poema caiu no gosto dos intelectuais e também de pessoas comuns
-            </ArtigoPreview>
+          {post.map((pos,key) => {
+            return(
+              <div key={key}>
+                <ArtigoTitulo>
+                  {pos.tituloPost}
+                </ArtigoTitulo>
+                <ArtigoPreview>
+                  {pos.textPost}
+                </ArtigoPreview>
+                <br/>
+              </div>
+
+            )
+          })}
+            
           
         </Artigo>
         

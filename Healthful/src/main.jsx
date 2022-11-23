@@ -8,7 +8,7 @@ import { Cadastro } from './Pages/Cadastro/cadastro.jsx';
 import { Artigos } from './Pages/Artigos/artigos.jsx';
 import { Perfil } from './Pages/Perfil/perfil.jsx';
 import { CriarArtigo } from './Pages/CriarArtigo/criarArtigo.jsx';
-import { Pesquisa } from './Pages/Pesquisa/pesquisa.jsx';
+
 
 
 

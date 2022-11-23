@@ -6,18 +6,31 @@ import { useState } from "react";
 import { TextEditor } from "../../Components/TextEditor/textEditor.jsx";
 import Button from "../../Components/Button/button.jsx";
 import { DropdownComp } from "../../Components/Dropdown/dropdown.jsx";
-
-
-
-
-
-
-
+import Axios from 'axios'
 
 
 export function CriarArtigo(){
-  const [value, setValue] = useState("")
-  const [selected, setSelected] = useState("Categoria")
+
+    const[oi, setARtigo] = useState();
+    const [values, setValue] = useState();
+    const [selected, setSelected] = useState("Categoria")
+
+   
+    
+    const HandleChangeValues = (value) =>{
+        setValue(prevValue =>({
+            ...prevValue,
+            [value.target.name]: value.target.value,
+        }))
+    };
+    
+    const HandleClickButton = () =>{
+        Axios.post("http://localhost:4000/postagem/novo/", {
+            tituloPost: values.titulo,
+            textPost: values.text
+       
+        })
+    } 
 
     return(
     <>
@@ -28,9 +41,9 @@ export function CriarArtigo(){
               
                 
                 <ContainerInput>
-                    <InputTitle placeholder="Título"/>
+                    <InputTitle onChange={HandleChangeValues} id="titulo" placeholder="Título"/>
                     <Separador/>
-                    <TextEditor style={{}} setValue={setValue}/>
+                    <TextEditor onChange={HandleChangeValues} id="text" style={{}} setValue={setARtigo}/>
                 </ContainerInput>
                
 
@@ -38,7 +51,7 @@ export function CriarArtigo(){
                     <DropdownComp link1='/login' link2='/cadastro' link3='/perfil' 
                 conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil'
                 selected={selected} style={{ textDecoration: 'none' }} setSelected={setSelected}/> 
-                <Button estilo="6" conteudo='Enviar para revisão'/>
+                <Button  onClick={()=>HandleClickButton()} estilo="6" conteudo='Enviar para revisão'/>
                 </Buttons>
 
                 
