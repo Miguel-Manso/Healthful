@@ -16,7 +16,8 @@ export function CriarArtigo(){
     const [selected, setSelected] = useState("Categoria")
 
    
-    
+    console.log(values)
+    console.log(oi)
     const HandleChangeValues = (value) =>{
         setValue(prevValue =>({
             ...prevValue,
@@ -27,9 +28,10 @@ export function CriarArtigo(){
     const HandleClickButton = () =>{
         Axios.post("http://localhost:4000/postagem/novo/", {
             tituloPost: values.titulo,
-            textPost: values.text
+            textPost: oi
        
         })
+        
     } 
 
     return(
@@ -41,9 +43,9 @@ export function CriarArtigo(){
               
                 
                 <ContainerInput>
-                    <InputTitle onChange={HandleChangeValues} id="titulo" placeholder="Título"/>
+                    <InputTitle onChange={HandleChangeValues} name="titulo" placeholder="Título"/>
                     <Separador/>
-                    <TextEditor onChange={HandleChangeValues} id="text" style={{}} setValue={setARtigo}/>
+                    <TextEditor onChange={HandleChangeValues}  style={{}} setValue={setARtigo}/>
                 </ContainerInput>
                
 
