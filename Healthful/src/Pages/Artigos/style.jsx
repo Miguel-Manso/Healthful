@@ -85,7 +85,3 @@ export const CategoriaTitulo = styled.div`
   color: gray;
 `
 
-export const Categoriaspace = styled.div`
-  display: flex;
-  flex-direction: row;
-`
