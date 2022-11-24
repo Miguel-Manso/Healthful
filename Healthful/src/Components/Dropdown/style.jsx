@@ -37,11 +37,7 @@ export const DropdownContentCategoria = styled.div`
 
 
 export const Dropdown = styled.div`
-
-    width: auto;
-    margin: auto;
-    text-decoration: none;
-
+    
     
 > ${ButtonNav}{
     padding: 10px;
@@ -58,23 +54,15 @@ export const Dropdown = styled.div`
 }
 
 > ${ButtonCategoria}{
+    width:170px;
+    align-items: center;
+    justify-content: center;
+    background-color: #17e100;
     color: #ffffff;
-    padding: 1%;
-    display: flex;
-    flex-direction: column;
-    background-color:#19f100;
-    border: 1px #212121 ;
-    text-transform: uppercase;
-    letter-spacing: 0.2 rem;
-    height: auto;
-    border: none ;
-    padding:1rem;
     border-radius: 0.6rem;
-    cursor: pointer;
-    a { color: inherit; } 
-    text-decoration: none;
-    display: flex;
-    align-items:center;
+    padding: 10%;
+    margin-right:10%;
+    text-align: center;
 
 };
 
@@ -107,24 +95,26 @@ export const Dropdown = styled.div`
 > ${DropdownContentCategoria}{
     position: absolute;
     top: auto;
-    padding:15px;
-    background: #9900ff;
-    font-weight: bold;
-    color: #333;
-    width: auto;
-    border-radius: 0.3rem;
+    align-items: center;
+    margin-top: 0.5%;
     text-align: center;
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
+    width: 170px;
+    cursor: pointer;
 
 
     > ${DropdownItemCategoria}{
-        padding: 10px;
+        align-items: center;
         cursor: pointer;
         transition: all 0.2s;
-        border-radius: 1rem;
-        text-align: center;
-        overflow: auto;
-        :hover {background: #147014;}
+        width: 100%;
+        padding: 3%;
         text-decoration: none;
+
+        
+        :hover {background: #ffffff;}
 
 
     }

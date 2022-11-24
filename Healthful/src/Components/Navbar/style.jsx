@@ -45,6 +45,7 @@ export const Nav = styled.div`
   width: 100%;
   position: top;
   margin-bottom: 2%;
+  height: 20%;
 
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.265);

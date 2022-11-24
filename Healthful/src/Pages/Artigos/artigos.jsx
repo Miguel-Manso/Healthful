@@ -2,7 +2,7 @@ import Button from "../../Components/Button/button.jsx";
 import { Footer } from "../../Components/Footer/footer.jsx";
 import Input from "../../Components/Input/input.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
-import { Artigo, Categorias, Categoriaspace, CategoriaTitulo, Container, CategoryTitle, ArtigoTitulo, ArtigoPreview } from "./style.jsx";
+import { Artigo, Categorias, Categoriaspace, CategoriaTitulo, Container, CategoryTitle1,CategoryTitle2, ArtigoTitulo, ArtigoPreview,Content } from "./style.jsx";
 import axios from 'axios'
 import {useEffect, useState} from 'react';
 
@@ -42,7 +42,7 @@ export function Artigos () {
         <>
         <Navbar />
         <Container>
-
+          <Content>
         <Input estilo="2" placeholder="Pesquise Um Artigo"/>
 
  
@@ -61,9 +61,9 @@ export function Artigos () {
 
         </Categorias>
 
-        <CategoryTitle>
+        <CategoryTitle1>
           Mais Recentes
-        </CategoryTitle>
+        </CategoryTitle1>
 
         <Artigo>
           {post.map((pos,key) => {
@@ -85,12 +85,11 @@ export function Artigos () {
         </Artigo>
         
 
-        <CategoryTitle>
+        <CategoryTitle2>
           Populares 
-        </CategoryTitle>
+        </CategoryTitle2>
 
-
-    
+    </Content>
         </Container>
         <Footer />
         </>

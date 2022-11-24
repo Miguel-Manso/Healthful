@@ -1,20 +1,31 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 5%;
 
 `
-
+export const Content = styled.div`
+    margin-left: 10%;
+    margin-right: 10%;
+`;
 export const Categorias = styled.div`
     height: 30%;
     line-break: strict;
 
 `
 
-export const CategoryTitle = styled.div`
+export const CategoryTitle1 = styled.div`
   font-family: 'Alata', sans-serif;
-  display: flex;
+  font-weight: 1000;
+  margin-top: 8%;
+  font-size: 3rem;
+  text-transform: uppercase;
+
+`
+export const CategoryTitle2 = styled.div`
+  font-family: 'Alata', sans-serif;
   font-weight: 1000;
   margin-top: 8%;
   font-size: 3rem;

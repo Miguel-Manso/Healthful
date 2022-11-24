@@ -52,18 +52,12 @@ export const InputAlter = styled.input`
 `
 
 export const InputSearch = styled.input`
-    margin-top: 5%;
     margin-bottom: 5%;
-    justify-content: center;
-    align-items: center;
     padding: 0 20px;
-    border-radius: 50px;
-    height: 3.5rem;
+    border-radius: 2rem;
+    height: 3rem;
     border: 4px solid  #108a02;
     background: #ffffff;
-    transition: all 0.5s;
-    display: flex;
-    line-height: 30px;
     font-size: 1.7rem;
   
 

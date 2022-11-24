@@ -34,9 +34,9 @@ export function CriarArtigo(){
 
     return(
     <>
-    <Navbar />
+    
         <Container>
-          
+          <Navbar />
           
               
                 
@@ -59,7 +59,7 @@ export function CriarArtigo(){
           
           <Footer />
         </Container>
-        
+   
 
         </>
     )

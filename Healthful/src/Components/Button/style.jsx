@@ -138,8 +138,10 @@ export const ButtonUser = styled.button`
 export const ButtonEnviarArtigo = styled.button`
     color: #ffffff;
     padding: 1%;
+    margin-left: 1%;
+    width:170px;
+    text-align: center;
     background-color:#3765cb;
-    border: 1px #212121 ;
     text-transform: uppercase;
     letter-spacing: 0.2 rem;
     height: auto;
@@ -150,7 +152,4 @@ export const ButtonEnviarArtigo = styled.button`
     text-decoration: none;
     display: flex;
     align-items:center;
-   
-
-
 `

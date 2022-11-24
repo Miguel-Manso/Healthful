@@ -13,8 +13,9 @@ import { SearchBar } from "../../Components/SearchBar/searchbar.jsx";
 export function Perfil () {
   return (
 <>
-    <Navbar />
+    
     <Container>
+      <Navbar />
       <Cabecalho>
 
       <Secao>
@@ -42,9 +43,9 @@ export function Perfil () {
       </SecaoLower>
 
         </Cabecalho>
-
+<Footer />
       </Container>
-    <Footer />
+    
 </>
   )
 }

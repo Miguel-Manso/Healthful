@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-margin-left: 10%;
-margin-right: 10%;
 height: 100%;
 overflow: auto;
 `
 
 
 export const Cabecalho = styled.div`
-
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
 `;
 
 export const Texto = styled.div`

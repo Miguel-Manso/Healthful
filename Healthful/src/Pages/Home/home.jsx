@@ -143,15 +143,11 @@ export function Home () {
    
             <Separador />
             <ImagemArtigo src={Certificado}></ImagemArtigo>
-            
           </HomeTexto>
         </SecaoArtigo>
-       
-        
-      
-        <Footer />
+         <Footer/>
       </Container>
-
+       
 
     </>
   )

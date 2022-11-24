@@ -105,6 +105,7 @@ const IconsContainer = styled.div`
     justify-content: space-evenly;
     width: 80%;
     margin:3%;
+    
 
 `
 

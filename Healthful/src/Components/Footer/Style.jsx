@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 
 const FooterDiv = styled.div`
-position: absolute;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 20%;
@@ -13,24 +11,21 @@ position: absolute;
   padding: 1.5rem 2rem;
   text-align: center;
   list-style-type: none;
-  overflow: hidden;
   z-index: -10;
+  
 
 `;
 
 const FooterP = styled.li`
-  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 1%;
   width: 100%;
 
 `;
 
 const FooterList = styled.div`
   display: flex;
-  
   flex-direction: column;
 
 `;
@@ -47,6 +42,5 @@ const FooterSpan = styled.li`
 const ImagemFooter = styled.img`
     width: 10rem;
     height: 5rem;
-    margin: 1%;
 `
 export {FooterSpan, FooterList, FooterDiv, FooterP, ImagemFooter}

@@ -4,12 +4,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     overflow: auto;
-    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 100%;
+    height: 60%;
     width: 100%;
     
 `
@@ -19,7 +18,7 @@ export const ContainerInput = styled.div`
     display: flex;
     flex-direction: column;
     font-size:20px;
-    margin-top:2%;
+    margin-top:10%;
     width: 80%;
     margin: auto;
     justify-content: center;
@@ -34,7 +33,7 @@ export const InputTitle = styled.input`
     color: #000000;
     background-color: #ffffff;
     padding: 10px;
-    margin: 0;
+    margin-top: 2%;
     border-color:none;
     border-radius: 0.6rem;
     align-items:center;
@@ -51,6 +50,10 @@ export const Separador =styled.div`
 
 
 export const Buttons = styled.div`
+   margin-bottom: 10%;
+   margin-top:1%;
    display: flex;
+
+   justify-content:center;
 `
 

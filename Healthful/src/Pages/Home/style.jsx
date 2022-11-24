@@ -8,7 +8,8 @@ export const Container = styled.div`
   align-items: center;
   background-color: white;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
+  min-width: 900px;
 
 `;
 
