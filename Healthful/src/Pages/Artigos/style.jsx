@@ -37,7 +37,6 @@ export const Artigo = styled.div`
   margin-top: 1%;
   font-family: 'Open Sans', sans-serif;
   display: flex;
-  text-transform: uppercase;
   flex-direction: column;
   font-size: 1.2rem;
 
@@ -49,7 +48,6 @@ export const ArtigoTitulo = styled.div`
   font-style: italic;
   display: flex;
   text-align: justify;
-  text-transform: uppercase;
   font-size: 1.2rem;
 
 
@@ -62,7 +60,6 @@ export const ArtigoPreview = styled.div`
   margin-top: 0;
   margin-left: 1%;
   display: flex;
-  text-transform: uppercase;
   font-size: 1.0rem;
   word-break: break-all;
   overflow: hidden; // Removendo barra de rolagem

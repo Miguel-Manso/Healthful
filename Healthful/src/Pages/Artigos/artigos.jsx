@@ -67,19 +67,19 @@ export function Artigos () {
         <Artigo>
           {post.map((pos,key) => {
             return(
+              
               <div key={key}>
                 <ArtigoTitulo>
                   {pos.tituloPost}
                 </ArtigoTitulo>
                 <ArtigoPreview>
-                  {pos.textPost}
+                  <div dangerouslySetInnerHTML={{__html: pos.textPost}}></div>
                 </ArtigoPreview>
                 <br/>
-              </div>
-
+                
+              </div>             
             )
           })}
-            
           
         </Artigo>
         
