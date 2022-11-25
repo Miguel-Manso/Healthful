@@ -104,7 +104,7 @@ export const IconLupa = styled.div`
     cursor: pointer;
 
 
-`
+`;
 
 export const IconEnter = styled.div`
   svg{
@@ -122,7 +122,7 @@ export const IconEnter = styled.div`
   cursor: pointer;
   
  
-`
+`;
 
 export const IconArrow = styled.div`
   svg{
@@ -139,6 +139,21 @@ export const IconArrow = styled.div`
   display: flex;
   cursor: pointer;
 
-`
+`;
+
+export const IconNav = styled.div`
+    width: 2rem;
+    color: #14bc04;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    cursor: pointer;
+    svg {
+        width: 1.6rem;
+        height: auto;
+      }
+
+`;
 
 export { IconFacebook, IconInstagram, IconTwitter}

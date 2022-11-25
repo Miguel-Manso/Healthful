@@ -45,14 +45,15 @@ export const Nav = styled.div`
   width: 100%;
   position: top;
   margin-bottom: 2%;
-  height: 20%;
+  height: 15.6%;
 
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.265);
 `;
 export const ImagemNav = styled.img`
-    width: 4.6rem;
-    margin-top: 10%;
+    width: 4.7rem;
+    margin-top: 0.7rem;
+    margin-left: 6rem;
 `
 
 

@@ -1,4 +1,4 @@
-import { IconFacebook, IconInstagram, IconTwitter, IconUser, IconDrop, IconEnter, IconLupa, IconArrow} from "./styled.jsx";
+import { IconFacebook, IconInstagram, IconTwitter, IconUser, IconDrop, IconEnter, IconLupa, IconArrow, IconNav} from "./styled.jsx";
 
 export default function Icon({estilo, conteudo, onClick}) {
     if (estilo == 1){
@@ -32,7 +32,9 @@ export default function Icon({estilo, conteudo, onClick}) {
         return(
             <IconArrow onClick={onClick}>{conteudo}</IconArrow>)
         
-
+    } else if (estilo == 8){
+        return(
+            <IconNav onClick={onClick}>{conteudo}</IconNav>)
 
     } else {
         return(

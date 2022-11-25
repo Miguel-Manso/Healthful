@@ -5,9 +5,9 @@ export function DropdownComp ({ selected, setSelected, link1, link2, link3, link
      conteudo1, conteudo2, conteudo3, conteudo4, estilo}) { 
 
     const [isActive, setIsActive] = useState(false); 
-    const options = [<a href={link1} style={{textDecoration:'none'}}>{conteudo1}</a>,
-                     <a href={link2} style={{textDecoration:'none'}}>{conteudo2}</a>, 
-                      <a href={link3} style={{textDecoration:'none'}}>{conteudo3}</a>]; 
+    const options = [<a href={link1} style={{textDecoration:'none', color:'black'}}>{conteudo1}</a>,
+                     <a href={link2} style={{textDecoration:'none', color:'black'}}>{conteudo2}</a>, 
+                      <a href={link3} style={{textDecoration:'none', color:'black'}}>{conteudo3}</a>]; 
 
     if (estilo == 1){
             return (

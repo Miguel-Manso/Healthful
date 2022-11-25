@@ -70,7 +70,7 @@ export const Dropdown = styled.div`
     position: absolute;
     top: auto;
     padding:15px;
-    background: #ce2cff;
+    background: #fff;
     font-weight: bold;
     color: #333;
     width: auto;
@@ -81,11 +81,12 @@ export const Dropdown = styled.div`
     > ${DropdownItemNav}{
         padding: 10px;
         cursor: pointer;
+        text-transform: uppercase;
         transition: all 0.2s;
-        border-radius: 1rem;
-        text-align: center;
+        border-radius: 0.5rem;
+        text-align: left;
         overflow: auto;
-        :hover {background: #147014;}
+        :hover {background: #ddd;}
         text-decoration: none;
 
 

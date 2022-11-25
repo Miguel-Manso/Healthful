@@ -1,28 +1,22 @@
-import { FooterDiv, FooterList, FooterP, FooterSpan, ImagemFooter } from "./Style.jsx";
+import { Container, ContainerFoot, ImagemFooter } from "./Style.jsx";
 import Logo from "../../Assets/equipe_healtful.svg";
+import Icon from "../../Components/IconComp/icon.jsx"
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export function Footer(){
   return(
     
-      <FooterDiv>
-        <FooterP>
+      <Container>
         <ImagemFooter src={Logo}> 
         </ImagemFooter>
+          <ContainerFoot>
+            <span><Icon estilo="1" conteudo={<FaFacebookF />}></Icon></span>
+            <span><a target="blank" href="https://www.instagram.com/healthful.oficial/"> <Icon estilo="2" conteudo={<FaInstagram />}></Icon></a></span>
+           <span> <Icon conteudo={<FaTwitter />}></Icon></span>
+          </ContainerFoot>
+          </Container>
 
-        <FooterList>
-          <FooterSpan> Contato </FooterSpan>
-          <FooterSpan> Link </FooterSpan>
-          <FooterSpan> Categorias </FooterSpan>
-        </FooterList>
-        <FooterList>
-          <FooterSpan> Quem Somos? </FooterSpan>
-          <FooterSpan> Suporte </FooterSpan>
-          <FooterSpan> Redes Sociais </FooterSpan>
-        </FooterList>
          
-        </FooterP>
-
-      </FooterDiv>
 
   )
 }
