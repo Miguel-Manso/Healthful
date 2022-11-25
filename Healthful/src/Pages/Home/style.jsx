@@ -8,8 +8,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: white;
   height: 100%;
-  max-width: 100%;
-  min-width: 900px;
+  width: 100%;
 
 `;
 
@@ -70,7 +69,10 @@ export const CrieArtigo = styled.div`
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
   background-image: linear-gradient(0deg, rgba(15,123,5,1) 0%, #19f100 100%);
-;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 export const SecaoArtigo = styled.div`
@@ -94,15 +96,8 @@ export const Separador = styled.span`
 `
 
 export const CardsCategoria = styled.div`
-  padding: 2%;
-  height: 530px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
- position: relative;
-
+  margin-top: 1%;
+  margin-bottom: 1%;
 `
 
 export const TextoArtigos = styled.p`

@@ -38,6 +38,49 @@ position: absolute;
   ${(props) => props.right === true ? css` right: 3%;` : css` left: 3%;`}
 `;
 
+export const CardCarousel = styled.div`
+
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  
+.rec.rec-arrow-left:hover:enabled,
+.rec.rec-arrow-right:hover:enabled{
+   background-color:  rgba(0, 121, 14, 0.5);
+}
+
+.rec.rec-container {
+  margin-top: 5%;
+}
+
+button.rec-dot{
+  background-color: rgb(237, 237, 237);
+  box-shadow: 0 0 1px 3px rgba(136, 136, 136, 0.5);
+}
+
+.rec.rec-arrow {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+button.rec-dot:hover, button.rec-dot:focus  {
+  box-shadow: 0 0 1px 3px #10700b8a;
+}
+
+button.rec-dot:active {
+  color: #0bb40289;
+}
+
+
+
+
+
+
+
+
+
+`
+
+
 export const Title = styled.h3`
   font-size: 18px;
   display: flex;
@@ -67,4 +110,4 @@ export const Dot = styled.div`
   cursor: pointer;
   ${(props) => props.active === true ? css`background-color: white` : css`background-color: gray;`}
 `;
-/* _______________________________________________________________________________________________________ */
+

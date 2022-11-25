@@ -5,19 +5,15 @@ import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { Container,  ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
 import Logo from "../../Assets/logo.svg";
 import { Slide } from "../../Components/Carrossel/Carrossel.jsx";
+import { Link } from "react-router-dom";
 
-/*PlaceHolder*/
-import Bike from "../../Assets/Placeholder/Bike.svg";
-import Caminhar from "../../Assets/Placeholder/Caminhar.svg";
-import Abdomen from "../../Assets/Placeholder/Abdomen.svg";
-import Comidas from "../../Assets/Placeholder/Comidas.svg";
+
 
 import Escrita from "../../Assets/HomeImg/escritas.svg";
 import Salvos from "../../Assets/HomeImg/artigos_salvos.svg";
 import Perfil from "../../Assets/HomeImg/perfil.svg";
 import Certificado from "../../Assets/HomeImg/certificados.svg";
-import { CardComp } from "../../Components/Cards/cards.jsx";
-import Button from "../../Components/Button/button.jsx";
+
 
 const config = [
   {
@@ -40,7 +36,7 @@ export function Home () {
       <Container>
       <Navbar />
           
-        <Slide config={config} />
+        <Slide estilo='1' config={config} />
 
           
           <Apresentacao>
@@ -65,18 +61,12 @@ export function Home () {
         </HomeTexto>
 
         <HomeTexto>
-        ACESSE ABAIXO PARA LER NOSSOS ARTIGOS OU  <CrieArtigo> ‎ Crie Um Artigo</CrieArtigo>
+        ACESSE ABAIXO PARA LER NOSSOS ARTIGOS OU  <CrieArtigo><Link to="/artigos" style={{ textDecoration: 'none' }}> ‎ Crie Um Artigo</Link></CrieArtigo>
         </HomeTexto>
 
         <CardsCategoria>
 
-          <CardComp background={Bike} titulo="Ciclismo" subtitulo="Quais os benefícios de andar de Bike?" texto="É importante porquê..."/>
-          <SeparadorCard  />
-          <CardComp background={Comidas} titulo="Alimentação" subtitulo="Importância da sua alimentação" texto="É importante porquê..."/>
-          <SeparadorCard/>
-          <CardComp background={Abdomen} titulo="Treinos" subtitulo="Treinamentos importantes!" texto="É importante porquê..."/>
-          <SeparadorCard />
-          <CardComp background={Caminhar} titulo="Caminhadas" subtitulo="Importância da caminhada" texto="É importante porquê..."/>
+         <Slide/>
 
               
         </CardsCategoria> 
