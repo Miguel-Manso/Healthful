@@ -26,13 +26,9 @@ const config = [
   }
 ]
 
-export function Home () {
-  const [value, setValue] = useState("")
-  
+export function Home () { 
   return (
     <>
-  
-
       <Container>
         <Navbar />
         <Content>
@@ -59,7 +55,7 @@ export function Home () {
         </HomeTexto>
 
         <HomeTexto>
-        ACESSE ABAIXO PARA LER NOSSOS ARTIGOS OU  <CrieArtigo><Link to="/artigos" style={{ textDecoration: 'none' }}> ‎ Crie Um Artigo</Link></CrieArtigo>
+        ACESSE ABAIXO PARA LER NOSSOS ARTIGOS OU  <CrieArtigo><Link to="/artigos" style={{ textDecoration: 'none' }}>‎ Crie Um Artigo</Link></CrieArtigo>
         </HomeTexto>
 
         <CardsCategoria>
