@@ -17,7 +17,7 @@ export const ButtonCompGreen = styled.button`
     color: white;
     transition-duration: 0.4s
     }
-`
+`;
 
 export const ButtonCompWhite = styled.button`
     color: #14bc04;
@@ -37,7 +37,7 @@ export const ButtonCompWhite = styled.button`
     color: #14bc04;
     transition-duration: 0.4s
     }
-`
+`;
 export const ButtonCompDelete = styled.button`
     color: #ffffff;
     background-color:#af2727;
@@ -56,7 +56,7 @@ export const ButtonCompDelete = styled.button`
     color: white;
     transition-duration: 0.4s
     }
-`
+`;
 export const ButtonCompAlter = styled.button`
     color: #ffffff;
     background-color:#2dd354;
@@ -76,7 +76,7 @@ export const ButtonCompAlter = styled.button`
     transition-duration: 0.4s
     }
 
-`
+`;
 
 export const ButtonCompCategoria = styled.button`
     margin-right: 1%;
@@ -88,7 +88,7 @@ export const ButtonCompCategoria = styled.button`
     padding: 3px 20px;
     text-transform: uppercase;
     font-family: 'Alata', sans-serif;
-    background-color: rgb(23, 225, 0);
+    background-color: #17e100;
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
@@ -102,7 +102,7 @@ export const ButtonCompCategoria = styled.button`
     color: white;
     transition-duration: 0.4s
     }
-`
+`;
 
 
 export const ButtonUser = styled.button`
@@ -133,7 +133,7 @@ export const ButtonUser = styled.button`
     color: #14bc04;
     transition-duration: 0.4s
     }
-`
+`;
 
 export const ButtonEnviarArtigo = styled.button`
     color: #ffffff;
@@ -152,4 +152,21 @@ export const ButtonEnviarArtigo = styled.button`
     text-decoration: none;
     display: flex;
     align-items:center;
-`
+`;
+export const ButtonNavPlus = styled.button`
+    color: #ffffff;
+    padding: 5%;
+    font-size: 1.1rem;
+    width:170px;
+    margin: 0%;
+    text-align: center;
+    background-color:#17e100;
+    text-transform: uppercase;
+    border: none ;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    a { color: inherit; } 
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+`;

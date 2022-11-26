@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 
-const fadeIn = keyframes`
+export const fadeIn = keyframes`
   from {
     opacity: 0;
   }
@@ -11,7 +11,7 @@ const fadeIn = keyframes`
   }
 `;
 
- const IconFacebook = styled.div `
+export const IconFacebook = styled.div `
     height: 3.5rem;
     width: 3.5rem;
     background: linear-gradient(to right, #0546A0 0%, #663FB6 100%);
@@ -27,7 +27,7 @@ const fadeIn = keyframes`
     }
 `;
 
-const IconInstagram = styled.div `
+export const IconInstagram = styled.div `
     height: 3.5rem;
     width: 3.5rem;
     background: linear-gradient(to right, #A12AC4 0%, #ED586C 40%, #F0A853 100%);
@@ -60,7 +60,7 @@ const IconInstagram = styled.div `
 
 `
 
-const IconTwitter = styled.div `
+export const IconTwitter = styled.div `
     height: 3.5rem;
     width: 3.5rem;
     background: linear-gradient(to right, #56C1E1 0%, #35A9CE 50%);
@@ -142,8 +142,7 @@ export const IconArrow = styled.div`
 `;
 
 export const IconNav = styled.div`
-    width: 2rem;
-    color: #14bc04;
+    color: #679e62;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,5 +154,17 @@ export const IconNav = styled.div`
       }
 
 `;
+export const IconNavPlus = styled.div`
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    cursor: pointer;
+    svg {
+        color: #ffffff;
+        width: 1.6rem;
+        height: auto;
+      }
 
-export { IconFacebook, IconInstagram, IconTwitter}
+`;

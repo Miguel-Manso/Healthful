@@ -58,7 +58,6 @@ export function CriarArtigo(){
 
                 
               
-          
           <Footer />
         </Container>
    

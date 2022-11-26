@@ -3,7 +3,10 @@ import styled from "styled-components"
 export const MenuLink = styled.a`
   display: flex;
   font-size: 1.1rem !important;
-  padding: 1rem 2rem;
+  padding: 1rem;
+  margin-top: auto;
+  text-transform: uppercase;
+  margin-bottom: auto;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -18,8 +21,11 @@ export const MenuLink = styled.a`
   }
 `;
 export const MenuNav = styled.div`
-  margin-right: 19%;
+  margin-right: 10%;
+  display: flex;
   margin-left: auto;  
+  margin-top: auto;
+  margin-bottom: auto;
 
 `;
 
@@ -46,7 +52,7 @@ export const Nav = styled.div`
   width: 100%;
   position: top;
   margin-bottom: 2%;
-  height: 16.3%;
+  max-height: 16.3%;
 
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.265);

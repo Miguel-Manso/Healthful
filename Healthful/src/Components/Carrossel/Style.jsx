@@ -18,7 +18,7 @@ export const ImageContainer = styled.img`
   width: 98%;
   margin-left: 10%;
   margin-right: 10%;
-  height: auto;
+  height: 80%;
   object-fit: cover;
   border-radius: 1rem;
   z-index: -10;

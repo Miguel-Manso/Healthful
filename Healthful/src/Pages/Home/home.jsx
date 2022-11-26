@@ -34,12 +34,8 @@ export function Home () {
   
 
       <Container>
-      <Navbar />
+        <Navbar />
         <Content>
-          
-        <Slide estilo='1' config={config} />
-
-          
           <Apresentacao>
             <p>Bem-vindos à plataforma de artigos voltados à saúde.</p>
           </Apresentacao>
@@ -48,8 +44,9 @@ export function Home () {
             <img src={Logo} style={{width : '70% ', height : 'auto'}}/>
           </LogoHealthful>
 
+              <Slide estilo='1' config={config} />
 
-        <HomeTitulo>
+         <HomeTitulo>
           O Que É A Healthful?
         </HomeTitulo>
     

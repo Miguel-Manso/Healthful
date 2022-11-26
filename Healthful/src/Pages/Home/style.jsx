@@ -27,10 +27,14 @@ export const Apresentacao = styled.div`
 `
 
 export const LogoHealthful = styled.div`
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
 
 `
 
@@ -39,6 +43,7 @@ export const HomeTitulo = styled.div`
   display: flex;
   text-align: center;
   align-items: center;
+  margin-top: 2%;
   justify-content: center;
   font-weight: bold;
   font-size: 4rem;
