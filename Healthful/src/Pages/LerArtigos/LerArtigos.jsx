@@ -1,23 +1,30 @@
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { Footer } from "../../Components/Footer/footer.jsx";
-import { Container, TituloLerArtigo, ConteudoArtigo } from "./Styled.jsx";
+import { Container, TituloLerArtigo, ConteudoArtigo,Tags, Content } from "./Styled.jsx";
 
 export function LerArtigos () {
   return (
     <>
-      <Navbar />
+   
 
       <Container>
+           <Navbar />
+        <Content>
         <TituloLerArtigo>
-
+            <p>Titulos</p>
         </TituloLerArtigo>
         
         <ConteudoArtigo>
-
+            <p>VADG</p>
         </ConteudoArtigo>
-      </Container>
 
-      <Footer />
+        <Tags>
+          <p>dsafs</p>
+        </Tags>
+        </Content>
+        <Footer />
+      </Container>
+      
     </>
   )
 }

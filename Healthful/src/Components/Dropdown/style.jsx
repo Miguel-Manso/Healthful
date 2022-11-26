@@ -61,7 +61,7 @@ export const Dropdown = styled.div`
     color: #ffffff;
     border-radius: 0.6rem;
     padding: 10%;
-    margin-right:10%;
+    margin-right:11%;
     text-align: center;
 
 };
