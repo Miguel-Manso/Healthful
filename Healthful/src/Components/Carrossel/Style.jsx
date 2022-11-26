@@ -4,23 +4,24 @@ import { css } from "styled-components";
 
 /* Organizando o Steled do Carrossel */
 export const Container = styled.div`
-width: 100%;
+  width: 100%;
   height: 80%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -10;
   margin-top: 2.2%;
+  
 `;
 
 export const ImageContainer = styled.img`
   width: 98%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 1rem;
+  z-index: -10;
 `;
 
 

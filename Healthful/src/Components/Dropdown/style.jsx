@@ -67,6 +67,7 @@ export const Dropdown = styled.div`
 };
 
 > ${DropdownContentNav}{
+    
     position: absolute;
     top: auto;
     padding:15px;
@@ -76,6 +77,7 @@ export const Dropdown = styled.div`
     width: auto;
     border-radius: 0.3rem;
     text-align: center;
+
 
 
     > ${DropdownItemNav}{

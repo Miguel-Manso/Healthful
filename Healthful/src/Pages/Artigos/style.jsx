@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 60%;
-    margin-bottom: 5%;
+    height: 100%;
 
 `
 export const Content = styled.div`
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom:5%;
 `;
 export const Categorias = styled.div`
     height: 30%;

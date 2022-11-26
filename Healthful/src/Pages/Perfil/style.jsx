@@ -2,17 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 height: 100%;
-overflow: auto;
-`
+width:100%;
+`;
 
 
 export const Cabecalho = styled.div`
-    width: 80%;
-    align-items: center;
-    justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
+    margin-bottom:30%;
+    height: auto;
 `;
 
 export const Texto = styled.div`
@@ -24,7 +22,7 @@ export const Texto = styled.div`
   color: #0f7a04;
   text-transform: uppercase;
   font-size: 1.5rem;
-`
+`;
 
 export const Biography = styled.div`
   font-family: 'Alata', sans-serif;
@@ -35,7 +33,7 @@ export const Biography = styled.div`
   color: #707070;
   text-transform: uppercase;
   font-size: 1.2rem;
-`
+`;
 
 export const Icons = styled.div`
 display: flex;
@@ -52,13 +50,13 @@ svg{
   height: auto;
 }
 
-`
+`;
 export const SecaoLower = styled.div`
 display: flex;
 margin-left: 1%;
 margin-right: 1% ;
 
-`
+`;
 
 
 
@@ -66,7 +64,7 @@ export const Secao = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-`
+`;
 
 export const Title = styled.div`
 font-family: 'Alata', sans-serif;
@@ -75,7 +73,4 @@ font-family: 'Alata', sans-serif;
   margin-top: 1%;
   font-size: 3rem;
   text-transform: uppercase;
-`
-
-
-
+`;

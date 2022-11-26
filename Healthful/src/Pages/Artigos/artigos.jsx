@@ -40,8 +40,9 @@ export function Artigos () {
 
     return (
         <>
-        <Navbar />
+       
         <Container>
+           <Navbar />
           <Content>
         <Input estilo="2" placeholder="Pesquise Um Artigo"/>
 
@@ -88,9 +89,10 @@ export function Artigos () {
           Populares 
         </CategoryTitle2>
 
-    </Content>
+          </Content>
+          <Footer />
         </Container>
-        <Footer />
+        
         </>
     )
   }

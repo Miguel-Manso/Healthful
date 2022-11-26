@@ -19,12 +19,13 @@ export const MenuLink = styled.a`
 `;
 export const MenuNav = styled.div`
   margin-right: 19%;
+  margin-left: auto;  
 
 `;
 
+
 export const Menu = styled.div`
-  display:flex;
-  margin-left: auto;  
+  display:flex; 
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
@@ -45,7 +46,7 @@ export const Nav = styled.div`
   width: 100%;
   position: top;
   margin-bottom: 2%;
-  height: 15.6%;
+  height: 16.3%;
 
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.265);

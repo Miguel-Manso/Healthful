@@ -1,4 +1,4 @@
-import { Hamburger, MenuLink, Menu, Nav, ImagemNav, MenuNav, } from "./style.jsx";
+import { Hamburger, MenuLink, Menu, Nav, ImagemNav, MenuNav } from "./style.jsx";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo_small.svg";
 import { useState } from "react";
@@ -35,13 +35,12 @@ export function Navbar () {
             <span />
 
             </Hamburger>
-
+               
             <Menu Aberto={Aberto}>
                 <MenuLink><Icon estilo="8" conteudo={<MdOutlineArticle /> }/><Link to="/artigos" style={{ textDecoration: 'none' }}>Artigos</Link></MenuLink>
                 <MenuLink><Icon estilo="8" conteudo={<IoMdAddCircleOutline /> }/><Link to="/criar-artigo" style={{ textDecoration: 'none' }}>Crie Artigos</Link></MenuLink>
-
-              
             </Menu>
+           
             <MenuNav>
             <DropdownComp link1='/login' link2='/cadastro' link3='/perfil' 
                 conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil'

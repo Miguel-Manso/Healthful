@@ -11,6 +11,11 @@ export const Container = styled.div`
   width: 100%;
 
 `;
+export const Content = styled.div`
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom:5%;
+`;
 
 export const Apresentacao = styled.div`
   display: flex;

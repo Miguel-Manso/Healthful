@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
-import { Container,  ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
+import { Container, Content,  ImagemArtigo, CardsCategoria, LogoHealthful, Apresentacao, HomeTitulo, HomeTexto, CrieArtigo, SecaoArtigo, Separador, SeparadorCard } from "./style.jsx";
 import Logo from "../../Assets/logo.svg";
 import { Slide } from "../../Components/Carrossel/Carrossel.jsx";
 import { Link } from "react-router-dom";
@@ -35,6 +35,7 @@ export function Home () {
 
       <Container>
       <Navbar />
+        <Content>
           
         <Slide estilo='1' config={config} />
 
@@ -106,7 +107,7 @@ export function Home () {
 
         <SecaoArtigo>
           <HomeTexto>
-          <ImagemArtigo src={Perfil} style={{width : '25% ', height : 'auto'}} />
+          <ImagemArtigo src={Perfil} />
           <Separador />
          
             QUALQUER UM PODE ESCREVER ARTIGOS,
@@ -135,6 +136,7 @@ export function Home () {
             <ImagemArtigo src={Certificado}></ImagemArtigo>
           </HomeTexto>
         </SecaoArtigo>
+        </Content>
          <Footer/>
       </Container>
        
