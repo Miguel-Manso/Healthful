@@ -65,7 +65,7 @@ export const Card = styled.div`
     font-weight: 100;
     font-style: italic;
     transition: all .5s;
-    color: green;
+    color: white;
 
 }
 }

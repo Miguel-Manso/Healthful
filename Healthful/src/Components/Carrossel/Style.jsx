@@ -15,12 +15,12 @@ export const Container = styled.div`
 `;
 
 export const ImageContainer = styled.img`
-  width: 98%;
+  width: 80rem;
   margin-left: 10%;
   margin-right: 10%;
   height: 80%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: .4rem;
   z-index: -10;
 `;
 
@@ -32,11 +32,11 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0;
+  margin-right: 0;
   cursor: pointer;
   
-  ${(props) => props.right === true ? css` right: 3%;` : css` left: 3%;`}
+  ${(props) => props.right === true ? css` right:0 ;` : css` left: 0;`}
 `;
 
 export const CardCarousel = styled.div`
@@ -46,7 +46,10 @@ export const CardCarousel = styled.div`
   
 .rec.rec-arrow-left:hover:enabled,
 .rec.rec-arrow-right:hover:enabled{
-   background-color:  rgba(0, 121, 14, 0.5);
+   background-color:  rgba(0, 121, 14, 0.5) !important;
+}
+.rec-arrow:hover:not(:disabled) {
+    transform: scale(1.2);
 }
 
 .rec.rec-container {

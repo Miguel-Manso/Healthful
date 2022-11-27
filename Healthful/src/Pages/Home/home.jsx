@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
@@ -6,6 +5,14 @@ import { Container, Content,  ImagemArtigo, CardsCategoria, LogoHealthful, Apres
 import Logo from "../../Assets/logo.svg";
 import { Slide } from "../../Components/Carrossel/Carrossel.jsx";
 import { Link } from "react-router-dom";
+
+import carousel1 from '../../Assets/Carousel/carousel1.png'
+import carousel2 from '../../Assets/Carousel/carousel2.png'
+import carousel3 from '../../Assets/Carousel/carousel3.png'
+import carousel4 from '../../Assets/Carousel/carousel4.png'
+import carousel5 from '../../Assets/Carousel/carousel5.png'
+import carousel6 from '../../Assets/Carousel/carousel6.png'
+
 
 
 
@@ -17,13 +24,23 @@ import Certificado from "../../Assets/HomeImg/certificados.svg";
 
 const config = [
   {
-    title: 'imagem I',
-    image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    image: carousel1
   },
   {
-    title: 'imagem II',
-    image: 'https://images.pexels.com/photos/14113084/pexels-photo-14113084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  }
+    image: carousel2
+  },
+  {
+    image: carousel3
+  },
+  {
+    image: carousel4
+  },
+  {
+    image: carousel5
+  },
+  {
+    image: carousel6
+  },
 ]
 
 export function Home () { 
@@ -66,7 +83,7 @@ export function Home () {
         </CardsCategoria> 
 
         <HomeTitulo style={{ 'font-size': '3.5rem'}}>
-          Crie Ou Leie Artigos
+          Crie Ou Leia Artigos
         </HomeTitulo>
          
 
@@ -87,9 +104,9 @@ export function Home () {
 
             VOCÊ TAMBÉM PODE SALVAR 
             <br/>
-            ARTIGOS E COMENTAR SUA 
+            ARTIGOS PARA OS LER
             <br/>
-            OPINIÃO EM UM ARTIGO!
+            POSTERIORMENTE!
             <br/>
 
             <Separador />
