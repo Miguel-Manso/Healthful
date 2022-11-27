@@ -1,5 +1,5 @@
 
-import { Container, Buttons, InputTitle, ContainerInput, Separador} from "./style.jsx"
+import { Container, Buttons, InputTitle, ContainerInput, Separador,Content} from "./style.jsx"
 import { Footer } from "../../Components/Footer/footer.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { useState } from "react";
@@ -7,6 +7,7 @@ import { TextEditor } from "../../Components/TextEditor/textEditor.jsx";
 import Button from "../../Components/Button/button.jsx";
 import { DropdownComp } from "../../Components/Dropdown/dropdown.jsx";
 import Axios from 'axios'
+
 
 
 export function CriarArtigo(){
@@ -39,7 +40,7 @@ export function CriarArtigo(){
     
         <Container>
           <Navbar />
-          
+                <Content>
               
                 
                 <ContainerInput>
@@ -56,7 +57,7 @@ export function CriarArtigo(){
                     <Button  onClick={()=>HandleClickButton()} estilo="6" conteudo='Enviar para revisão'/>
                 </Buttons>
 
-                
+                </Content>
               
           <Footer />
         </Container>

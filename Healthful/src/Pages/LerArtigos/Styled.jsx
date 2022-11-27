@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  height: 100%;
+  width:100%;
 `;
 
 export const TituloLerArtigo = styled.div`
@@ -32,6 +34,8 @@ export const Tags = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-left: 10%;
-  margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom:30%;
+    height: auto;
 `;

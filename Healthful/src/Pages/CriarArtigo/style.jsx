@@ -11,15 +11,22 @@ export const Container = styled.div`
     height: 100%;
     width: 100%;
     
-`
+`;
+export const Content = styled.div`
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:5%;
+    height: auto;
+
+
+`;
 
 
 export const ContainerInput = styled.div` 
     display: flex;
     flex-direction: column;
     font-size:20px;
-    margin-top:10%;
-    width: 80%;
+    margin-top:15%;
     margin: auto;
     justify-content: center;
 
