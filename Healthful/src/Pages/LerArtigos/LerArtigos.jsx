@@ -39,9 +39,8 @@ export function LerArtigos () {
 
                 <br/>
 
-                <ConteudoArtigo>
-                  <div dangerouslySetInnerHTML={{__html: pos.textPost}}></div>
-                </ConteudoArtigo>
+                <ConteudoArtigo dangerouslySetInnerHTML={{__html: pos.textPost}}></ConteudoArtigo>
+        
 
                 <Tags>
                 
@@ -49,7 +48,7 @@ export function LerArtigos () {
               </div>
             )
           })}
-        </Content>
+          </Content>
         <Footer />
       </Container>
       

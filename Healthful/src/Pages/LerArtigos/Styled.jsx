@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  
-
 `;
 
 export const TituloLerArtigo = styled.div`
@@ -14,8 +12,10 @@ export const TituloLerArtigo = styled.div`
 `;
 
 export const ConteudoArtigo = styled.div`
-margin-left: 2%;
-margin-top: 1%;
+  margin-left: 2%;
+  margin-top: 1%;
+  max-width: 100%;
+  word-break: break-all;
 `;
 
 export const Tags = styled.div`
@@ -26,6 +26,7 @@ export const Tags = styled.div`
   font-weight: bold;
   color: gray;
   margin-top: 8%;
+  
 
 
 `;
@@ -33,5 +34,4 @@ export const Tags = styled.div`
 export const Content = styled.div`
   margin-left: 10%;
   margin-right: 10%;
-
 `;

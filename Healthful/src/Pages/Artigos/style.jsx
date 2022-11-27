@@ -49,6 +49,7 @@ export const ArtigoTitulo = styled.div`
   display: flex;
   text-align: justify;
   font-size: 1.2rem;
+  text-decoration: none;
 
 
 `
