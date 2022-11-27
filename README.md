@@ -25,13 +25,10 @@
 
 <h4 align="center">
 
-🚧 Em Andamento... 🚧
+🤯 Concluído 🤯
 
 </h4>
 
-<h4>A parte do nosso Front-End começou no mês de Setembro, dando continuidade até o presente momento.</h4>
-  
-<h6>A criação do Front, está sendo realizada por TODOS os integrantes do grupo.</h6>
 
 <div align="left">
 
