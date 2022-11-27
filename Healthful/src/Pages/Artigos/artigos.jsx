@@ -5,6 +5,7 @@ import { Navbar } from "../../Components/Navbar/navbar.jsx";
 import { Artigo, Categorias, CategoriaTitulo, Container, CategoryTitle1,CategoryTitle2, ArtigoTitulo, ArtigoPreview,Content } from "./style.jsx";
 import axios from 'axios'
 import {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 
 
 export function Artigos () {
@@ -70,14 +71,15 @@ export function Artigos () {
             return(
               
               <div key={key}>
-                <ArtigoTitulo>
-                  {pos.tituloPost}
-                </ArtigoTitulo>
-                <ArtigoPreview>
-                  <div dangerouslySetInnerHTML={{__html: pos.textPost}}></div>
-                </ArtigoPreview>
+                <Link to={{pathname: `/lerartigos/${pos.idPost}`}}>
+                  <ArtigoTitulo>
+                    {pos.tituloPost}
+                  </ArtigoTitulo>
+                  <ArtigoPreview>
+                    <div dangerouslySetInnerHTML={{__html: pos.textPost}}></div>
+                  </ArtigoPreview>
+                </Link>
                 <br/>
-                
               </div>             
             )
           })}
