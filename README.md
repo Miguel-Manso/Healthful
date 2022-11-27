@@ -38,10 +38,10 @@
 ## 🧱 Desenvolvimento
 - [ ] Tela de Login ✔️
 - [ ] Tela de Cadastro ✔️
-- [ ] Home 🚧
-- [ ] Criação de Artigos 🚧
-- [ ] Artigos 🚧
-- [ ] Tela de Usuário 🚧
+- [ ] Home ✔️
+- [ ] Criação de Artigos ✔️
+- [ ] Artigos ✔️
+- [ ] Tela de Usuário ✔️
 
 ---
 ## 📦 Linguagem e Extensões
