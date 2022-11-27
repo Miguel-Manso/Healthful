@@ -39,9 +39,17 @@ export const Artigo = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
-
-
+ 
 `
+
+export const Previews = styled.div`
+  color: inherit;
+  color: black;
+  :hover {
+    color: green;
+  }
+`
+
 export const ArtigoTitulo = styled.div`
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -50,6 +58,7 @@ export const ArtigoTitulo = styled.div`
   text-align: justify;
   font-size: 1.2rem;
   text-decoration: none;
+ 
 
 
 `
@@ -68,8 +77,7 @@ export const ArtigoPreview = styled.div`
   display: -webkit-box;
   -webkit-line-clamp: 2; // Quantidade de linhas
   -webkit-box-orient: vertical; 
-
-
+  text-decoration: none;
 
 
 `

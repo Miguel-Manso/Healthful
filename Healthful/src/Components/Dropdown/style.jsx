@@ -74,9 +74,10 @@ export const Dropdown = styled.div`
     background: #fff;
     font-weight: bold;
     color: #333;
-    width: auto;
     border-radius: 0.3rem;
     text-align: center;
+    -webkit-box-shadow: 2px 5px 15px 3px rgba(0, 0, 0, 0.74);
+      box-shadow: 2px 5px 15px 3px rgba(0, 0, 0, 0.74);
 
 
 
@@ -90,6 +91,7 @@ export const Dropdown = styled.div`
         overflow: auto;
         :hover {background: #ddd;}
         text-decoration: none;
+  
 
 
     }
@@ -101,9 +103,8 @@ export const Dropdown = styled.div`
     align-items: center;
     margin-top: 0.5%;
     text-align: center;
-    -webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
-    -moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
-    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 2px 5px 15px 3px rgba(0, 0, 0, 0.74);
+      box-shadow: 2px 5px 15px 3px rgba(0, 0, 0, 0.74);
     width: 170px;
     cursor: pointer;
 
@@ -115,12 +116,17 @@ export const Dropdown = styled.div`
         width: 100%;
         padding: 3%;
         text-decoration: none;
+        :hover { 
+            background-color: #ddd;
+}
+        }
+       
 
         
-        :hover {background: #ffffff;}
 
 
-    }
+
+    
 }
 
 

@@ -2,7 +2,7 @@ import Button from "../../Components/Button/button.jsx";
 import { Footer } from "../../Components/Footer/footer.jsx";
 import Input from "../../Components/Input/input.jsx";
 import { Navbar } from "../../Components/Navbar/navbar.jsx";
-import { Artigo, Categorias, CategoriaTitulo, Container, CategoryTitle1,CategoryTitle2, ArtigoTitulo, ArtigoPreview,Content } from "./style.jsx";
+import { Artigo, Categorias, CategoriaTitulo, Container, CategoryTitle1,CategoryTitle2, ArtigoTitulo, Previews, ArtigoPreview,Content } from "./style.jsx";
 import axios from 'axios'
 import {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
@@ -71,14 +71,18 @@ export function Artigos () {
             return(
               
               <div key={key}>
-                <Link to={{pathname: `/lerartigos/${pos.idPost}`}}>
-                  <ArtigoTitulo>
+                <Link style={{  'text-decoration': 'none'}} to={{pathname: `/lerartigos/${pos.idPost}`}}>
+                
+                  <Previews>
+                  <ArtigoTitulo >
                     {pos.tituloPost}
                   </ArtigoTitulo>
                   <ArtigoPreview>
                     <div dangerouslySetInnerHTML={{__html: pos.textPost}}></div>
                   </ArtigoPreview>
+                  </Previews>
                 </Link>
+
                 <br/>
               </div>             
             )

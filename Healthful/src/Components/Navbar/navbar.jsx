@@ -45,7 +45,7 @@ export function Navbar () {
             <MenuNav>
             <MenuLink><Button estilo="7" conteudo={<><Icon estilo="9" conteudo={<IoMdAddCircleOutline /> }/><Link to="/criar-artigo" style={{ textDecoration: 'none' }}>Crie Artigos</Link></>}></Button></MenuLink>
             <DropdownComp link1='/login' link2='/cadastro' link3='/perfil' 
-                conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil'
+                conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil' 
                 selected={selected} estilo='1' />
             </MenuNav>
        

@@ -8,6 +8,7 @@ import { FaBell } from "react-icons/fa"; /* Sino */
 import Icon from "../../Components/IconComp/icon.jsx";
 import Button from "../../Components/Button/button.jsx";
 import { SearchBar } from "../../Components/SearchBar/searchbar.jsx";
+import { Link } from "react-router-dom";
 
 
 export function Perfil () {
@@ -35,11 +36,9 @@ export function Perfil () {
       <SecaoLower>
         <Button estilo="5" conteudo="Meus Artigos" />
         <Button  estilo="5" conteudo="Artigos Salvos" />
-        <Button estilo="5" conteudo="Criar Artigo" />
+       < Button estilo="5" conteudo="Criar Artigo" />
 
-          <SearchBar />
-     
-        
+      <SearchBar />   
       </SecaoLower>
 
         </Cabecalho>

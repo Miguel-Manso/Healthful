@@ -17,6 +17,7 @@ export const Content = styled.div`
     margin-right: 10%;
     margin-top:5%;
     height: auto;
+    margin-bottom: 15%;
 
 
 `;
@@ -29,6 +30,7 @@ export const ContainerInput = styled.div`
     margin-top:15%;
     margin: auto;
     justify-content: center;
+    margin-bottom: 3%;
 
 
 
@@ -60,6 +62,8 @@ export const Buttons = styled.div`
    margin-bottom: 10%;
    margin-top:1%;
    display: flex;
+   cursor: pointer;
+
 
    justify-content:center;
 `

@@ -15,7 +15,6 @@ export const TituloLerArtigo = styled.div`
 
 export const ConteudoArtigo = styled.div`
   margin-left: 2%;
-  margin-top: 1%;
   max-width: 100%;
   word-break: break-all;
 `;

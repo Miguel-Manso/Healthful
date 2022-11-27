@@ -55,7 +55,6 @@ export const SecaoLower = styled.div`
 display: flex;
 margin-left: 1%;
 margin-right: 1% ;
-
 `;
 
 

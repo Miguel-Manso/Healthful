@@ -40,6 +40,7 @@ export function CriarArtigo(){
     
         <Container>
           <Navbar />
+
                 <Content>
               
                 
@@ -51,8 +52,9 @@ export function CriarArtigo(){
                
 
                 <Buttons>
-                    <DropdownComp link1='/login' link2='/cadastro' link3='/perfil' 
-                    conteudo1='Entrar' conteudo2='Cadastrar' conteudo3='Perfil'
+                    <DropdownComp 
+                    conteudo1='Boa Alimentação' conteudo2='Esportes' conteudo3='Yoga' conteudo4='Nutrição'
+                    conteudo5='Musculação' conteudo6='Meditação' conteudo7='Calistenia'
                     selected={selected} style={{ textDecoration: 'none' }} setSelected={setSelected}/> 
                     <Button  onClick={()=>HandleClickButton()} estilo="6" conteudo='Enviar para revisão'/>
                 </Buttons>
