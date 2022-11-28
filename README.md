@@ -54,9 +54,6 @@
 
 <h4 align="center"> </h4>
 
-✔️ Crud Concluído ✔️
-
-</h4>
 
 <h4>Back-End Concluído </h4>
 
