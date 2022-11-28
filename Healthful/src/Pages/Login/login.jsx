@@ -30,6 +30,7 @@ export function Login(){
                 senhaUser: values.senha
             }).then((response) =>{
                 console.log(response)
+                navigate('/')
                 if (values.email == response.data[0].emailUser && values.senha ==  response.data[0].senhaUser){
                   navigate('/', {replace: true})
                 }
