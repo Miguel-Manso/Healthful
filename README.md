@@ -15,12 +15,6 @@
 <p>Em nosso site o cliente navegará com muita facilidade, pois estamos desenvolvemos um layout claro e objetivo. Aqui ele poderá encontrar, conteúdos como: dicas de treino, auxílio para a sua saúde e a nossa comunidade.</p>
 
 ---
-
-## 📽️ Demonstração 
-
-<h3>Colocar algumas imagens, videos ou gif do nosso desenvolvimento</h3>
-
----
 ## 🖥️ Front End
 
 <h4 align="center">
@@ -64,9 +58,7 @@
 
 </h4>
 
-<h4>O nosso CRUD deu inicio em 08/09/2022, para ser utilizado no Back-End do nosso projeto, com o objetivo de ter as 4 principais funções. <br>
-( Get, Insert, Update e Delete )</h4>
-<h6>O CRUD juntamente com o Back-End, foi feita pelos integrantes Pedro Augusto e Miguel Manso.</h6>
+<h4>Back-End Concluídoh4>
 
 <div align="left">
 
