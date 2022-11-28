@@ -7,6 +7,7 @@ import { TextEditor } from "../../Components/TextEditor/textEditor.jsx";
 import Button from "../../Components/Button/button.jsx";
 import { DropdownComp } from "../../Components/Dropdown/dropdown.jsx";
 import Axios from 'axios'
+import { Link } from "react-router-dom";
 
 
 
@@ -55,8 +56,12 @@ export function CriarArtigo(){
                     <DropdownComp 
                     conteudo1='Boa Alimentação' conteudo2='Esportes' conteudo3='Yoga' conteudo4='Nutrição'
                     conteudo5='Musculação' conteudo6='Meditação' conteudo7='Calistenia'
-                    selected={selected} style={{ textDecoration: 'none' }} setSelected={setSelected}/> 
-                    <Button  onClick={()=>HandleClickButton()} estilo="6" conteudo='Enviar para revisão'/>
+                    selected={selected} style={{ textDecoration: 'none' }} setSelected={setSelected}/>
+                    
+                        <Button onClick={()=>HandleClickButton()} estilo="6" 
+                        conteudo={<Link to={{pathname: `/` }} style={{ textDecoration: 'none' }}>Enviar para revisão</Link>}>
+                        </Button>
+                   
                 </Buttons>
 
                 </Content>
