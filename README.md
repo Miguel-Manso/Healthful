@@ -1,10 +1,10 @@
 <div align="center">
-  
+
+# ⚡ Projeto | Healthful ⚡
+
 <h6>
   Documentação no README feita por Victor Bellini
 </h6>
-
-# ⚡ Projeto | Healthful ⚡
 
 ![Image](https://github.com/Miguel-Manso/Healthful/blob/master/Healthful/src/Assets/logo.svg)
   
