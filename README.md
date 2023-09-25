@@ -91,7 +91,7 @@
 <table align='center'>
 
   <tr>
-    <td align="center"><a href="https://github.com/VictorHBellini"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/114271274?s=400&u=d01d133c379987af2ae6a48388c5591d16b41900&v=4" width="100px;" alt="foto Victor"/><br /><sub><b>Victor H. Bellini</b></sub></a><br/>
+    <td align="center"><a href=""><img style="border-radius: 50%;" src="" width="100px;" alt="foto Victor"/><br /><sub><b>Victor H. Bellini</b></sub></a><br/>
     </td>
     <td align="center"><a href="https://github.com/PedroAugustoB"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99665373?v=4" width="100px;" alt="foto Pedro"/><br /><sub><b>Pedro Augusto B.</b></sub></a><br/>
     </td>
