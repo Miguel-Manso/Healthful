@@ -7,10 +7,6 @@
 # ⚡ Projeto | Healthful ⚡
 
 ![Image](https://github.com/Miguel-Manso/Healthful/blob/master/Healthful/src/Assets/logo.svg)
-  
-  <h1>
-    Site do TCC em Atualização e Melhorias...
-  </h1>
 
 ## 💚 Nossa Equipe Healthful
 
